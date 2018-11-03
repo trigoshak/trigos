@@ -3,13 +3,22 @@
 return array(
 	'label' => array(
 		'Home',
-		'Erzeugt nebeneinander dargestellte Boxen mit Bild und Text',
+		'Home',
 	),
 	'types' => array('content'),
-	'standardFields' => array('cssID', 'headline', 'columns'),
+	'standardFields' => array('cssID'),
 	'fields' => array(
+		'image' => array(
+			'label' => array('Hintergrund-Bild', ''),
+			'inputType' => 'fileTree',
+			'eval' => array(
+				'fieldType' => 'radio',
+				'filesOnly' => true,
+				'extensions' => \Config::get('validImageTypes'),
+			),
+		),
 		'size' => array(
-			'label' => array('Bildbreite und Bildhöhe', ''),
+			'label' => $GLOBALS['TL_LANG']['tl_content']['size'],
 			'inputType' => 'imageSize',
 			'options' => \System::getImageSizes(),
 			'reference' => &$GLOBALS['TL_LANG']['MSC'],
@@ -18,39 +27,18 @@ return array(
 				'includeBlankOption' => true,
 			),
 		),
-		'boxes' => array(
-			'label' => array('Boxen', ''),
-			'elementLabel' => 'Box %s',
-			'inputType' => 'list',
-			'fields' => array(
-				'image' => array(
-					'label' => array('Bild', ''),
-					'inputType' => 'fileTree',
-					'eval' => array(
-						'fieldType' => 'radio',
-						'filesOnly' => true,
-						'extensions' => \Config::get('validImageTypes'),
-					),
-				),
-				'headline' => array(
-					'label' => array('Überschrift', ''),
-					'inputType' => 'text',
-				),
-				'text' => array(
-					'label' => array('Beschreibung', ''),
-					'inputType' => 'textarea',
-					'eval' => array('rte' => 'tinyMCE'),
-				),
-				'url' => array(
-					'label' => array('URL', 'Beispiele: {{link_url::seitenalias}} (Alias, ID oder anderer Inserttag), http://example.com'),
-					'inputType' => 'url',
-					'eval' => array('tl_class' => 'w50'),
-				),
-				'newWindow' => array(
-					'label' => $GLOBALS['TL_LANG']['MSC']['target'],
-					'inputType' => 'checkbox',
-					'eval' => array('tl_class' => 'w50 m12'),
-				),
+		'alt' => array(
+			'label' => array('Logo-Text', 'Alternativtext für Suchmaschinen und Browser ohne Bildunterstützung.'),
+			'inputType' => 'text',
+			'eval' => array('tl_class' => 'w50'),
+		),
+		'logo' => array(
+			'label' => array('Logo-Grafik', ''),
+			'inputType' => 'fileTree',
+			'eval' => array(
+				'fieldType' => 'radio',
+				'filesOnly' => true,
+				'extensions' => \Config::get('validImageTypes'),
 			),
 		),
 	),

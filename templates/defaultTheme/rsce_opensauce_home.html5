@@ -1,29 +1,32 @@
-<section class="teaser-boxes <?php echo $this->class ?>"<?php echo $this->cssID ?>>
-	<?php if ($this->headline): ?>
-		<<?php echo $this->hl ?>><?php echo $this->headline ?></<?php echo $this->hl ?>>
-	<?php endif ?>
-	<?php foreach ($this->boxes as $index => $box): ?>
-		<?php $className = 'teaser-boxes-item ' . $this->getColumnClassName($index) ?>
-		<?php if ($box->url): ?>
-			<a class="<?php echo $className ?>" href="<?php echo $box->url ?>"<?php if ($box->newWindow): ?> target="_blank"<?php endif ?>>
+<section class="<?php echo $this->class ?>"<?php echo $this->cssID ?>>
+	<div class="img">
+		<?php if ($image = $this->getImageObject($this->image, $this->size)): ?>
+			<?php $image->picture['alt'] = $this->alt ?: $image->picture['alt'] ?>
+			<?php $this->insert('picture_default', $image->picture) ?>
 		<?php else: ?>
-			<div class="<?php echo $className ?>">
+			<?php echo $this->alt ?>
 		<?php endif ?>
-			<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
-				<div class="teaser-boxes-item-image">
-					<?php $this->insert('picture_default', $image->picture) ?>
+	</div>
+
+	<div class="home-overlay1">
+			<h2 class="headline-shadow"></h2>
+		<div class="home-overlay2">
+				<h2 class="headline">Trigos</h2>
+			<?php if ($logo = $this->getImageObject($this->image, $this->size)): ?>
+				<?php $logo->picture['alt'] = $this->alt ?: $logo->picture['alt'] ?>
+				<?php $this->insert('picture_default', $logo->picture) ?>
+			<?php else: ?>
+				<?php echo $this->alt ?>
+			<?php endif ?>
+		</div>
+		<div class="mouse-section">
+			<div class="mouse-shape">
+				<div class="mouse-wheel">
 				</div>
-			<?php endif ?>
-			<?php if ($box->headline): ?>
-				<h3><?php echo $box->headline ?></h3>
-			<?php endif ?>
-			<?php if ($box->text): ?>
-				<p><?php echo $box->text ?></p>
-			<?php endif ?>
-		<?php if ($box->url): ?>
-			</a>
-		<?php else: ?>
 			</div>
-		<?php endif ?>
-	<?php endforeach ?>
+			<div class="mouse-divText">
+				<p>Scroll down</p>
+			</div>
+		</div>
+	</div>
 </section>
