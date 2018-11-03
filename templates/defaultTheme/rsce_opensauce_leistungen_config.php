@@ -6,16 +6,16 @@ return array(
 		'Erzeugt nebeneinander dargestellte Boxen mit Bild und Text',
 	),
 	'types' => array('content'),
-	'standardFields' => array('cssID', 'headline', 'columns'),
+	'standardFields' => array('cssID'),
 	'fields' => array(
-		'size' => array(
-			'label' => array('Bildbreite und Bildhöhe', ''),
-			'inputType' => 'imageSize',
-			'options' => \System::getImageSizes(),
-			'reference' => &$GLOBALS['TL_LANG']['MSC'],
+		'label' => array('Laptop', ''),
+		'image' => array(
+			'label' => array('Laptop-Bild', ''),
+			'inputType' => 'fileTree',
 			'eval' => array(
-				'rgxp' => 'digit',
-				'includeBlankOption' => true,
+				'fieldType' => 'radio',
+				'filesOnly' => true,
+				'extensions' => \Config::get('validImageTypes'),
 			),
 		),
 		'boxes' => array(
@@ -23,8 +23,26 @@ return array(
 			'elementLabel' => 'Box %s',
 			'inputType' => 'list',
 			'fields' => array(
-				'image' => array(
-					'label' => array('Bild', ''),
+				'image1' => array(
+					'label' => array('Logo der Anwendung', ''),
+					'inputType' => 'fileTree',
+					'eval' => array(
+						'fieldType' => 'radio',
+						'filesOnly' => true,
+						'extensions' => \Config::get('validImageTypes'),
+					),
+				),
+				'image2' => array(
+					'label' => array('Unbearbeitetes Bild', ''),
+					'inputType' => 'fileTree',
+					'eval' => array(
+						'fieldType' => 'radio',
+						'filesOnly' => true,
+						'extensions' => \Config::get('validImageTypes'),
+					),
+				),
+				'image3' => array(
+					'label' => array('Bearbeitetes Bild', ''),
 					'inputType' => 'fileTree',
 					'eval' => array(
 						'fieldType' => 'radio',
@@ -33,23 +51,13 @@ return array(
 					),
 				),
 				'headline' => array(
-					'label' => array('Überschrift', ''),
+					'label' => array('Software-Kategorien', ''),
 					'inputType' => 'text',
 				),
 				'text' => array(
-					'label' => array('Beschreibung', ''),
+					'label' => array('Beschreibung/Beispiele', ''),
 					'inputType' => 'textarea',
 					'eval' => array('rte' => 'tinyMCE'),
-				),
-				'url' => array(
-					'label' => array('URL', 'Beispiele: {{link_url::seitenalias}} (Alias, ID oder anderer Inserttag), http://example.com'),
-					'inputType' => 'url',
-					'eval' => array('tl_class' => 'w50'),
-				),
-				'newWindow' => array(
-					'label' => $GLOBALS['TL_LANG']['MSC']['target'],
-					'inputType' => 'checkbox',
-					'eval' => array('tl_class' => 'w50 m12'),
 				),
 			),
 		),

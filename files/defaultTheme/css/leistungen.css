@@ -1,0 +1,17 @@
+#leistungen {
+  height: 100%;
+  width: 100%;
+}
+
+.leistungen-leftDiv {
+  width: 40%;
+  height: 100px;
+  background-color: grey;
+  float: left;
+}
+
+.leistungen-rightDiv {
+  width: 60%;
+  height: 100px;
+  display: inline-block;
+}
