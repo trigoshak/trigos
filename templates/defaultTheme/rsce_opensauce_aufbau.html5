@@ -1,17 +1,79 @@
 <section class="teaser-boxes <?php echo $this->class ?>"<?php echo $this->cssID ?>>
-	<div class="aufbau-section">
-		<div class="aufbau-einkaufDiv">
+	<div class="einkauf-section">
+		<div class="einkauf-muster">
+			<div class="einkauf_line1"></div>
+			<div class="einkauf_circle1"></div>
+			<div class="einkauf_line2"></div>
+			<div class="einkauf_circle2"></div>
+			<div class="einkauf_line3"></div>
+			<div class="einkauf_circle3"></div>
+			<div class="einkauf_line4"></div>
 		</div>
-		<div class="aufbau-beschreibung">
-			<?php foreach ($this->boxes as $index => $box): ?>
-				<?php $className = 'teaser-boxes-item ' . $this->getColumnClassName($index) ?>
-					<?php if ($box->headline): ?>
-						<h3><?php echo $box->headline ?></h3>
-					<?php endif ?>
-					<?php if ($box->text): ?>
-						<p><?php echo $box->text ?></p>
-					<?php endif ?>
-			<?php endforeach ?>
+		<div class="einkauf-beschreibung">
+				<?php if ($box->headline1): ?>
+					<h3><?php echo $box->headline1 ?></h3>
+				<?php endif ?>
+				<?php if ($box->text1): ?>
+					<p><?php echo $box->text1 ?></p>
+				<?php endif ?>
+		</div>
+	</div>
+	<div class="verwaltung-section">
+		<div class="verwaltung-muster">
+			<div class="veraltung-line1"></div>
+			<div class="verwaltung_circle1"></div>
+			<div class="verwaltung_line2"></div>
+			<div class="verwaltung_circle2"></div>
+		</div>
+		<div class="verwaltung-beschreibung">
+				<?php if ($box->headline2): ?>
+					<h3><?php echo $box->headline2 ?></h3>
+				<?php endif ?>
+				<?php if ($box->text2): ?>
+					<p><?php echo $box->text2 ?></p>
+				<?php endif ?>
+		</div>
+	</div>
+	<div class="verkauf-section">
+		<div class="verkauf-muster">
+			<div class="verkauf_circle1"></div>
+			<div class="verkauf_line1"></div>
+			<div class="verkauf_circle2"></div>
+			<div class="verkauf_line3"></div>
+			<div class="verkauf_circle3"></div>
+			<div class="verkauf_line4"></div>
+			<div class="verkauf_circle4"></div>
+			<div class="verkauf_line5"></div>
+			<div class="verkauf_circle5"></div>
+		</div>
+		<div class="verkauf-beschreibung">
+				<?php if ($box->headline3): ?>
+					<h3><?php echo $box->headline3 ?></h3>
+				<?php endif ?>
+				<?php if ($box->text4): ?>
+					<p><?php echo $box->text4 ?></p>
+				<?php endif ?>
+		</div>
+	</div>
+	<div class="rechnungswesen-section">
+		<div class="rechnungswesen-muster">
+			<div class="rechnungswesen_circle1"></div>
+			<div class="rechnungswesen_line1"></div>
+			<div class="rechnungswesen_circle2"></div>
+			<div class="rechnungswesen_line3"></div>
+			<div class="rechnungswesen_circle3"></div>
+			<div class="rechnungswesen_line4"></div>
+			<div class="rechnungswesen_circle4"></div>
+			<div class="rechnungswesen_line5"></div>
+			<div class="rechnungwesen_circle5"></div>
+		</div>
+		<div class="rechnungswesen-beschreibung">
+				<?php if ($box->headline5): ?>
+					<h3><?php echo $box->headline5 ?></h3>
+				<?php endif ?>
+				<?php if ($box->text5): ?>
+					<p><?php echo $box->text5 ?></p>
+				<?php endif ?>
 		</div>
 	</div>
 </section>
