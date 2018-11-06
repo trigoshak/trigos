@@ -12,6 +12,7 @@ return array(
 				'label' => array('1. Abteilung', ''),
 				'inputType' => 'text',
 			),
+			// Für Animationen (Aufbau)
 			'text1' => array(
 				'label' => array('Anzahl Mitarbeiter', ''),
 				'inputType' => 'text',
@@ -41,6 +42,20 @@ return array(
 			),
 			'text4' => array(
 				'label' => array('Anzahl Mitarbeiter', ''),
+				'inputType' => 'text',
+				'eval' => array('rte' => 'tinyMCE'),
+			),
+
+			// Für NACH Animationen (Aufbau)
+			'text_aufbau' => array(
+				'label' => array('Text für Aufbau', 'machen Sie bitte Absätze mit einem Enter zeichen!'),
+				'inputType' => 'text',
+				'eval' => array('rte' => 'tinyMCE'),
+			),
+
+			// Unternehmensgegenstand (ug)
+			'text_ug' => array(
+				'label' => array('Text für Unternehmensgegenstand', 'machen Sie bitte Absätze mit einem Enter zeichen!'),
 				'inputType' => 'text',
 				'eval' => array('rte' => 'tinyMCE'),
 			),
