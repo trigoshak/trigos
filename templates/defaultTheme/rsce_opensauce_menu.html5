@@ -1,29 +1,46 @@
-<section class="teaser-boxes <?php echo $this->class ?>"<?php echo $this->cssID ?>>
-	<?php if ($this->headline): ?>
-		<<?php echo $this->hl ?>><?php echo $this->headline ?></<?php echo $this->hl ?>>
-	<?php endif ?>
-	<?php foreach ($this->boxes as $index => $box): ?>
-		<?php $className = 'teaser-boxes-item ' . $this->getColumnClassName($index) ?>
-		<?php if ($box->url): ?>
-			<a class="<?php echo $className ?>" href="<?php echo $box->url ?>"<?php if ($box->newWindow): ?> target="_blank"<?php endif ?>>
-		<?php else: ?>
-			<div class="<?php echo $className ?>">
-		<?php endif ?>
-			<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
-				<div class="teaser-boxes-item-image">
-					<?php $this->insert('picture_default', $image->picture) ?>
-				</div>
-			<?php endif ?>
-			<?php if ($box->headline): ?>
-				<h3><?php echo $box->headline ?></h3>
-			<?php endif ?>
-			<?php if ($box->text): ?>
-				<p><?php echo $box->text ?></p>
-			<?php endif ?>
-		<?php if ($box->url): ?>
-			</a>
-		<?php else: ?>
+<section class="<?php echo $this->class ?>"<?php echo $this->cssID ?>>
+
+	// eingeklappt = folded in
+	<div class="menu-folded_in">
+		<?php // TODO: ICON Hinzufügen ?>
+	</div>
+
+	// ausgeklappt = folded out
+	<div class="menu-folded_out">
+		<div class="menu-background">
+			<div class="menu-uppersection">
+				<p onclick="home">Home</p>
+				<?php // TODO: Ichon Hizufügen ?>
 			</div>
-		<?php endif ?>
-	<?php endforeach ?>
+			<div class="menu-navsection">
+				<div class="menu-leistungen-div">
+					<p>Eins</p>
+					<p onclick="leistungen">Leistung</p>
+				</div>
+				<div class="menu-ueberuns-div">
+					<p>Zwei</p>
+					<p onclick="ueberuns">Über uns</p>
+				</div>
+				<div class="menu-aufbau-div">
+					<p>Drei</p>
+					<p onclick="aufbau">Aufbau</p>
+				</div>
+				<div class="menu-jobs-div">
+					<p>Vier</p>
+					<p onclick="jobs">Jobs</p>
+				</div>
+				<div class="menu-kontakt-div">
+					<p>Fünf</p>
+					<p onclick="kontakt">Konkakt</p>
+				</div>
+				<div class="menu-webshop-div">
+					<p>Fünf</p>
+					<a href="www.trigos.eu">
+						 <p>Webshop</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="menu-hoverline-left"></div>
+	</div>
 </section>
