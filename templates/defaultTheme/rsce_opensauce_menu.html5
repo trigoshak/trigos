@@ -7,6 +7,7 @@
 
 	// ausgeklappt = folded out
 	<div class="menu-folded_out">
+		<div class="menu-hoverline-left"></div>
 		<div class="menu-background">
 			<div class="menu-uppersection">
 				<p onclick="home">Home</p>
@@ -15,7 +16,7 @@
 			<div class="menu-navsection">
 				<div class="menu-leistungen-div">
 					<p>Eins</p>
-					<p onclick="leistungen">Leistung</p>
+					<p onclick="leistungen">Leistungen</p>
 				</div>
 				<div class="menu-ueberuns-div">
 					<p>Zwei</p>
@@ -41,6 +42,5 @@
 				</div>
 			</div>
 		</div>
-		<div class="menu-hoverline-left"></div>
 	</div>
 </section>
