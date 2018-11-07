@@ -1,29 +1,21 @@
-<section class="teaser-boxes <?php echo $this->class ?>"<?php echo $this->cssID ?>>
-	<?php if ($this->headline): ?>
-		<<?php echo $this->hl ?>><?php echo $this->headline ?></<?php echo $this->hl ?>>
-	<?php endif ?>
-	<?php foreach ($this->boxes as $index => $box): ?>
-		<?php $className = 'teaser-boxes-item ' . $this->getColumnClassName($index) ?>
-		<?php if ($box->url): ?>
-			<a class="<?php echo $className ?>" href="<?php echo $box->url ?>"<?php if ($box->newWindow): ?> target="_blank"<?php endif ?>>
-		<?php else: ?>
-			<div class="<?php echo $className ?>">
-		<?php endif ?>
-			<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
-				<div class="teaser-boxes-item-image">
-					<?php $this->insert('picture_default', $image->picture) ?>
-				</div>
-			<?php endif ?>
-			<?php if ($box->headline): ?>
-				<h3><?php echo $box->headline ?></h3>
-			<?php endif ?>
-			<?php if ($box->text): ?>
-				<p><?php echo $box->text ?></p>
-			<?php endif ?>
-		<?php if ($box->url): ?>
-			</a>
-		<?php else: ?>
+<section class="ueberuns <?php echo $this->class ?>"<?php echo $this->cssID ?>>
+	<div class="kategorie1">
+		<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
+			<div class="teaser-boxes-item-image">
+				<?php $this->insert('picture_default', $image->picture) ?>
 			</div>
 		<?php endif ?>
-	<?php endforeach ?>
+
+		<?php if ($this->kategorie): ?>
+			<?php echo $this->hl ?>><?php echo $this->kategorie ?></<?php echo $this->hl ?>
+		<?php endif ?>
+
+		<?php if ($box->text1): ?>
+			<p><?php echo $box->text1 ?></p>
+		<?php endif ?>
+
+		<?php if ($box->text2): ?>
+			<p><?php echo $box->text2 ?></p>
+		<?php endif ?>
+	</div>
 </section>
