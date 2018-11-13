@@ -51,7 +51,7 @@ return array(
 					),
 				),
 				'headline' => array(
-					'label' => array('Software-Kategorien', ''),
+					'label' => array('Software-Kategorie', ''),
 					'inputType' => 'text',
 				),
 				'text' => array(

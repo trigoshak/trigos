@@ -13,28 +13,33 @@
 				<?php if ($box->text): ?>
 					<p><?php echo $box->text ?></p>
 				<?php endif ?>
+				<div class="leistungen-leftDiv-textLine">
+
+				</div>
 		<?php endforeach ?>
 	</div>
 	<div class="leistungen-rightDiv">
-		<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
-			<div class="teaser-boxes-item-image">
-				<?php $this->insert('picture_default', $image->picture) ?>
-			</div>
-		<?php endif ?>
-		<?php if ($image1 = $this->getImageObject($box->image1, $this->size)): ?>
-			<div class="teaser-boxes-item-image">
-				<?php $this->insert('picture_default', $image1->picture) ?>
-			</div>
-		<?php endif ?>
-		<?php if ($image2 = $this->getImageObject($box->image2, $this->size)): ?>
-			<div class="teaser-boxes-item-image">
-				<?php $this->insert('picture_default', $image2->picture) ?>
-			</div>
-		<?php endif ?>
-		<?php if ($image3 = $this->getImageObject($box->image3, $this->size)): ?>
-			<div class="teaser-boxes-item-image">
-				<?php $this->insert('picture_default', $image3->picture) ?>
-			</div>
-		<?php endif ?>
+		<div class="leistungen-rightDiv-center">
+			<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
+				<div class="teaser-boxes-item-image">
+					<?php $this->insert('picture_default', $image->picture) ?>
+				</div>
+			<?php endif ?>
+			<?php if ($image1 = $this->getImageObject($box->image1, $this->size)): ?>
+				<div class="teaser-boxes-item-image">
+					<?php $this->insert('picture_default', $image1->picture) ?>
+				</div>
+			<?php endif ?>
+			<?php if ($image2 = $this->getImageObject($box->image2, $this->size)): ?>
+				<div class="teaser-boxes-item-image">
+					<?php $this->insert('picture_default', $image2->picture) ?>
+				</div>
+			<?php endif ?>
+			<?php if ($image3 = $this->getImageObject($box->image3, $this->size)): ?>
+				<div class="teaser-boxes-item-image">
+					<?php $this->insert('picture_default', $image3->picture) ?>
+				</div>
+			<?php endif ?>
+		</div>
 	</div>
 </section>
