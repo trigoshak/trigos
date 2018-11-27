@@ -11,6 +11,10 @@ return array(
 		'headline' => array(
 			'label' => array('Überschrift', ''),
 			'inputType' => 'text',
+		),
+		'description' => array(
+			'label' => array('Beschreibung', ''),
+			'inputType' => 'textarea',
 			'eval' => array('rte' => 'tinyMCE'),
 		),
 		'text' => array(
@@ -33,7 +37,7 @@ return array(
 			'elementLabel' => 'Box %s',
 			'inputType' => 'list',
 			'fields' => array(
-				'headline' => array(
+				'subheadline' => array(
 					'label' => array('Überschrift', ''),
 					'inputType' => 'text',
 				),
@@ -45,11 +49,6 @@ return array(
 						'filesOnly' => true,
 						'extensions' => \Config::get('validImageTypes'),
 					),
-				),
-				'subheadline' => array(
-					'label' => array('Kategorie Überschrift', ''),
-					'inputType' => 'text',
-					'eval' => array('rte' => 'tinyMCE'),
 				),
 			),
 		),

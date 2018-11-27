@@ -1,14 +1,18 @@
 <section class="teaser-boxes <?php echo $this->class ?>"<?php echo $this->cssID ?>>
 	<?php if ($this->headline): ?>
-		<<?php echo $this->hl ?>><?php echo $this->headline ?></<?php echo $this->hl ?>>
+		<h3><?php echo $this->headline ?></h3>
 	<?php endif ?>
 
-	<?php if ($box->text): ?>
-		<p><?php echo $box->text ?></p>
+	<?php if ($this->description): ?>
+		<p><?php echo $this->description ?></p>
 	<?php endif ?>
 
-	<?php if ($box->url): ?>
-		<a class="<?php echo $className ?>" href="<?php echo $box->url ?>"<?php if ($box->newWindow): ?> target="_blank"<?php endif ?>></a>
+	<?php if ($this->url): ?>
+		<a class="<?php echo $className ?>" href="<?php echo $this->url ?>"<?php if ($this->newWindow): ?> target="_blank"<?php endif ?>>
+			<?php if ($this->text): ?>
+				<p><?php echo $this->text ?></p>
+			<?php endif ?>
+		</a>
 	<?php endif ?>
 
 	<?php foreach ($this->boxes as $index => $box): ?>
@@ -21,7 +25,7 @@
 			<?php endif ?>
 
 			<?php if ($box->subheadline): ?>
-				<h3><?php echo $box->subheadline ?></h3>
+				<h4><?php echo $box->subheadline ?></h4>
 			<?php endif ?>
 
 	<?php endforeach ?>

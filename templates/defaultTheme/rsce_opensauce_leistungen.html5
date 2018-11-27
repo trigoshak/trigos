@@ -1,45 +1,41 @@
 <section class="teaser-boxes <?php echo $this->class ?>"<?php echo $this->cssID ?>>
-	<div class="leistungen-leftDiv">
 		<?php foreach ($this->boxes as $index => $box): ?>
-			<?php $className = 'teaser-boxes-item ' . $this->getColumnClassName($index) ?>
-			<?php if ($box->url): ?>
-				<a class="<?php echo $className ?>" href="<?php echo $box->url ?>"<?php if ($box->newWindow): ?> target="_blank"<?php endif ?>>
-			<?php else: ?>
-				<div class="<?php echo $className ?>">
-			<?php endif ?>
-				<?php if ($box->headline): ?>
-					<h2><?php echo $box->headline ?></h2>
-				<?php endif ?>
-				<?php if ($box->text): ?>
-					<p><?php echo $box->text ?></p>
-				<?php endif ?>
-				<div class="leistungen-leftDiv-textLine">
 
+			<div class="leistungen-leftDiv">
+				<?php $className = 'teaser-boxes-item ' . $this->getColumnClassName($index) ?>
+				<?php if ($box->url): ?>
+					<a class="<?php echo $className ?>" href="<?php echo $box->url ?>"<?php if ($box->newWindow): ?> target="_blank"<?php endif ?>>
+				<?php else: ?>
+					<div class="<?php echo $className ?>"></div>
+				<?php endif ?>
+					<?php if ($box->headline): ?>
+						<h2><?php echo $box->headline ?></h2>
+					<?php endif ?>
+					<?php if ($box->text): ?>
+						<p><?php echo $box->text ?></p>
+					<?php endif ?>
+					<div class="leistungen-leftDiv-textLine"></div>
 				</div>
+
+				<div class="leistungen-rightDiv">
+					<div class="leistungen-rightDiv-center">
+						<?php if ($image1 = $this->getImageObject($box->image1, $this->size)): ?>
+							<div class="teaser-boxes-item-image">
+								<?php $this->insert('picture_default', $image1->picture) ?>
+							</div>
+						<?php endif ?>
+						<?php if ($image2 = $this->getImageObject($box->image2, $this->size)): ?>
+							<div class="teaser-boxes-item-image">
+								<?php $this->insert('picture_default', $image2->picture) ?>
+							</div>
+						<?php endif ?>
+						<?php if ($image3 = $this->getImageObject($box->image3, $this->size)): ?>
+							<div class="teaser-boxes-item-image">
+								<?php $this->insert('picture_default', $image3->picture) ?>
+							</div>
+						<?php endif ?>
+					</div>
+				</div>
+
 		<?php endforeach ?>
-	</div>
-	<div class="leistungen-rightDiv">
-		<div class="leistungen-rightDiv-center">
-			<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
-				<div class="teaser-boxes-item-image">
-					<?php $this->insert('picture_default', $image->picture) ?>
-				</div>
-			<?php endif ?>
-			<?php if ($image1 = $this->getImageObject($box->image1, $this->size)): ?>
-				<div class="teaser-boxes-item-image">
-					<?php $this->insert('picture_default', $image1->picture) ?>
-				</div>
-			<?php endif ?>
-			<?php if ($image2 = $this->getImageObject($box->image2, $this->size)): ?>
-				<div class="teaser-boxes-item-image">
-					<?php $this->insert('picture_default', $image2->picture) ?>
-				</div>
-			<?php endif ?>
-			<?php if ($image3 = $this->getImageObject($box->image3, $this->size)): ?>
-				<div class="teaser-boxes-item-image">
-					<?php $this->insert('picture_default', $image3->picture) ?>
-				</div>
-			<?php endif ?>
-		</div>
-	</div>
 </section>

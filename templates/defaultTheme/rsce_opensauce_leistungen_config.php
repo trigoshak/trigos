@@ -8,23 +8,13 @@ return array(
 	'types' => array('content'),
 	'standardFields' => array('cssID'),
 	'fields' => array(
-		'label' => array('Laptop', ''),
-		'image' => array(
-			'label' => array('Laptop-Bild', ''),
-			'inputType' => 'fileTree',
-			'eval' => array(
-				'fieldType' => 'radio',
-				'filesOnly' => true,
-				'extensions' => \Config::get('validImageTypes'),
-			),
-		),
 		'boxes' => array(
 			'label' => array('Boxen', ''),
 			'elementLabel' => 'Box %s',
 			'inputType' => 'list',
 			'fields' => array(
 				'image1' => array(
-					'label' => array('Logo der Anwendung', ''),
+					'label' => array('Bild 1', ''),
 					'inputType' => 'fileTree',
 					'eval' => array(
 						'fieldType' => 'radio',
@@ -33,7 +23,7 @@ return array(
 					),
 				),
 				'image2' => array(
-					'label' => array('Unbearbeitetes Bild', ''),
+					'label' => array('Bild 2', ''),
 					'inputType' => 'fileTree',
 					'eval' => array(
 						'fieldType' => 'radio',
@@ -42,7 +32,7 @@ return array(
 					),
 				),
 				'image3' => array(
-					'label' => array('Bearbeitetes Bild', ''),
+					'label' => array('Bild 3', ''),
 					'inputType' => 'fileTree',
 					'eval' => array(
 						'fieldType' => 'radio',

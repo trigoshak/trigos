@@ -57,8 +57,8 @@
 					<?php if ($this->headline3): ?>
 						<h3><?php echo $this->headline3 ?></h3>
 					<?php endif ?>
-					<?php if ($this->text4): ?>
-						<p><?php echo $this->text4 ?></p>
+					<?php if ($this->text3): ?>
+						<p><?php echo $this->text3 ?></p>
 					<?php endif ?>
 			</div>
 		</div>
@@ -75,11 +75,11 @@
 				<div class="rechnungwesen_circle5"></div>
 			</div>
 			<div class="rechnungswesen-beschreibung">
-					<?php if ($this->headline5): ?>
-						<h3><?php echo $this->headline5 ?></h3>
+					<?php if ($this->headline4): ?>
+						<h3><?php echo $this->headline4 ?></h3>
 					<?php endif ?>
-					<?php if ($this->text5): ?>
-						<p><?php echo $this->text5 ?></p>
+					<?php if ($this->text4): ?>
+						<p><?php echo $this->text4 ?></p>
 					<?php endif ?>
 			</div>
 		</div>

@@ -1,21 +1,54 @@
 <section class="ueberuns <?php echo $this->class ?>"<?php echo $this->cssID ?>>
 	<div class="kategorie1">
-		<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
+		<?php if ($image1 = $this->getImageObject($this->image1, $this->size)): ?>
 			<div class="teaser-boxes-item-image">
-				<?php $this->insert('picture_default', $image->picture) ?>
+				<?php $this->insert('picture_default', $image1->picture) ?>
 			</div>
 		<?php endif ?>
-
-		<?php if ($this->kategorie): ?>
-			<?php echo $this->hl ?>><?php echo $this->kategorie ?></<?php echo $this->hl ?>
+		<?php if ($this->kategorie1): ?>
+			<?php echo $this->kategorie1 ?>
 		<?php endif ?>
 
-		<?php if ($box->text1): ?>
-			<p><?php echo $box->text1 ?></p>
+		<?php if ($this->kategorie1_text1): ?>
+			<p><?php echo $this->kategorie1_text1 ?></p>
+		<?php endif ?>
+		<?php if ($this->kategorie1_text2): ?>
+			<p><?php echo $this->kategorie1_text2 ?></p>
+		<?php endif ?>
+	</div>
+
+	<div class="kategorie2">
+		<?php if ($image2 = $this->getImageObject($this->image2, $this->size)): ?>
+			<div class="teaser-boxes-item-image">
+				<?php $this->insert('picture_default', $image2->picture) ?>
+			</div>
+		<?php endif ?>
+		<?php if ($this->kategorie2): ?>
+			<?php echo $this->kategorie2 ?>
+		<?php endif ?>
+		<?php if ($this->kategorie2_text1): ?>
+			<p><?php echo $this->kategorie2_text1 ?></p>
+		<?php endif ?>
+		<?php if ($this->kategorie2_text2): ?>
+			<p><?php echo $this->kategorie2_text2 ?></p>
+		<?php endif ?>
+	</div>
+
+	<div class="kategorie3">
+		<?php if ($image3 = $this->getImageObject($this->image3, $this->size)): ?>
+			<div class="teaser-boxes-item-image">
+				<?php $this->insert('picture_default', $image3->picture) ?>
+			</div>
+		<?php endif ?>
+		<?php if ($this->kategorie3): ?>
+			<?php echo $this->kategorie3 ?>
+		<?php endif ?>
+		<?php if ($this->kategorie3_text1): ?>
+			<p><?php echo $this->kategorie3_text1 ?></p>
 		<?php endif ?>
 
-		<?php if ($box->text2): ?>
-			<p><?php echo $box->text2 ?></p>
+		<?php if ($this->kategorie3_text2): ?>
+			<p><?php echo $this->kategorie3_text2 ?></p>
 		<?php endif ?>
 	</div>
 </section>

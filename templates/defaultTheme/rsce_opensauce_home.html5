@@ -12,7 +12,7 @@
 			<h2 class="headline-shadow"></h2>
 		<div class="home-overlay2">
 				<h2 class="headline">Trigos</h2>
-			<?php if ($logo = $this->getImageObject($this->image, $this->size)): ?>
+			<?php if ($logo = $this->getImageObject($this->logo, $this->size)): ?>
 				<?php $logo->picture['alt'] = $this->alt ?: $logo->picture['alt'] ?>
 				<?php $this->insert('picture_default', $logo->picture) ?>
 			<?php else: ?>

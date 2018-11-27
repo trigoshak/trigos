@@ -1,11 +1,9 @@
 <section class="<?php echo $this->class ?>"<?php echo $this->cssID ?>>
 
-	// eingeklappt = folded in
 	<div class="menu-folded_in">
 		<?php // TODO: ICON Hinzufügen ?>
 	</div>
 
-	// ausgeklappt = folded out
 	<div class="menu-folded_out">
 		<div class="menu-hoverline-left"></div>
 		<div class="menu-background">
