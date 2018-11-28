@@ -18,10 +18,9 @@
 	</div>
 	<div class="lower-div">
 		<?php foreach ($this->boxes as $index => $box): ?>
-			<?php $className = 'teaser-boxes-item ' . $this->getColumnClassName($index) ?>
-
+			<div class="kategorie-item">
 				<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
-					<div class="teaser-boxes-item-image">
+					<div class="kategorie-item-image">
 						<?php $this->insert('picture_default', $image->picture) ?>
 					</div>
 				<?php endif ?>
@@ -29,7 +28,7 @@
 				<?php if ($box->subheadline): ?>
 					<h4><?php echo $box->subheadline ?></h4>
 				<?php endif ?>
-
+			</div>
 		<?php endforeach ?>
 	</div>
 </section>

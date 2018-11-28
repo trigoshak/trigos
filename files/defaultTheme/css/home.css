@@ -1,14 +1,29 @@
 #home {
   background: url(../img/home_weltkarte.png) no-repeat;
-  background-size: 80%;
+  background-size: 85%;
   background-position: center;
   background-color: #2d2d2d;
 }
 
 #home .home-overlay2 h2 {
   color: white;
-  font-size: 7em;
+  top: 50%;
+  font-size: 12em;
+  text-align: center;
   font-family: prime;
+  text-shadow: -120px -50px rgba(0,0,0,0.5);
+}
+
+.home-overlay2 > img {
+  position: relative;
+  top: 50%;
+}
+
+.mouse-divText > p {
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 100;
 }
 
 /* .ce_rsce_opensauce_home {
