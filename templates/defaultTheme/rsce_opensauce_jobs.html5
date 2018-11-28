@@ -1,32 +1,35 @@
 <section class="teaser-boxes <?php echo $this->class ?>"<?php echo $this->cssID ?>>
-	<?php if ($this->headline): ?>
-		<h3><?php echo $this->headline ?></h3>
-	<?php endif ?>
+	<div class="upper-div">
+		<?php if ($this->headline): ?>
+			<h3><?php echo $this->headline ?></h3>
+		<?php endif ?>
 
-	<?php if ($this->description): ?>
-		<p><?php echo $this->description ?></p>
-	<?php endif ?>
+		<?php if ($this->description): ?>
+			<p><?php echo $this->description ?></p>
+		<?php endif ?>
 
-	<?php if ($this->url): ?>
-		<a class="<?php echo $className ?>" href="<?php echo $this->url ?>"<?php if ($this->newWindow): ?> target="_blank"<?php endif ?>>
-			<?php if ($this->text): ?>
-				<p><?php echo $this->text ?></p>
-			<?php endif ?>
-		</a>
-	<?php endif ?>
+		<?php if ($this->url): ?>
+			<a class="<?php echo $className ?>" href="<?php echo $this->url ?>"<?php if ($this->newWindow): ?> target="_blank"<?php endif ?>>
+				<?php if ($this->text): ?>
+					<p><?php echo $this->text ?></p>
+				<?php endif ?>
+			</a>
+		<?php endif ?>
+	</div>
+	<div class="lower-div">
+		<?php foreach ($this->boxes as $index => $box): ?>
+			<?php $className = 'teaser-boxes-item ' . $this->getColumnClassName($index) ?>
 
-	<?php foreach ($this->boxes as $index => $box): ?>
-		<?php $className = 'teaser-boxes-item ' . $this->getColumnClassName($index) ?>
+				<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
+					<div class="teaser-boxes-item-image">
+						<?php $this->insert('picture_default', $image->picture) ?>
+					</div>
+				<?php endif ?>
 
-			<?php if ($image = $this->getImageObject($box->image, $this->size)): ?>
-				<div class="teaser-boxes-item-image">
-					<?php $this->insert('picture_default', $image->picture) ?>
-				</div>
-			<?php endif ?>
+				<?php if ($box->subheadline): ?>
+					<h4><?php echo $box->subheadline ?></h4>
+				<?php endif ?>
 
-			<?php if ($box->subheadline): ?>
-				<h4><?php echo $box->subheadline ?></h4>
-			<?php endif ?>
-
-	<?php endforeach ?>
+		<?php endforeach ?>
+	</div>
 </section>

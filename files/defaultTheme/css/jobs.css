@@ -1,0 +1,42 @@
+.ce_rsce_opensauce_jobs {
+    height: 100%;
+    width: 100%;
+    font-family: verdana;
+}
+
+.upper-div h3 {
+	font-family: Prime;
+	font-size: 2em;
+	font-weight: lighter;
+	color: white;
+}
+
+.upper-div {
+		text-align: center;
+		background-color: #242424;
+		font-weight: lighter;
+		padding: 2.5%;
+		left: 500px;
+		bottom: 0;
+		color: white;
+		height: 100%;
+}
+
+.upper-div p {
+	white-space: pre-wrap;
+	margin: 0 30% 0 30%;
+}
+
+.lower-div {
+  background-color: white;
+
+}
+
+.teaser-boxes-item {
+    float: left;
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    -moz-transition: width 1s;
+    margin: 0;
+}
