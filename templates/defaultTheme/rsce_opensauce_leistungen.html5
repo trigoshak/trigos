@@ -12,7 +12,7 @@
 						<h2><?php echo $box->headline ?></h2>
 					<?php endif ?>
 					<?php if ($box->text): ?>
-						<p><?php echo $box->text ?></p>
+						<?php echo $box->text ?>
 					<?php endif ?>
 					<div class="leistungen-leftDiv-textLine"></div>
 				</div>
