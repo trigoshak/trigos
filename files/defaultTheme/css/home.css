@@ -3,27 +3,56 @@
   background-size: 85%;
   background-position: center;
   background-color: #2d2d2d;
+  height: 723.2px;
+  position: relative;
 }
 
 #home .home-overlay2 h2 {
+  margin: 0;
+  position: absolute;
   color: white;
-  top: 50%;
+  top: Calc(50% - 114px);
+  left: Calc(50% - 236.76px);
   font-size: 12em;
-  text-align: center;
   font-family: prime;
-  text-shadow: -120px -50px rgba(0,0,0,0.5);
+  text-shadow: -120px -50px rgba(65, 65, 65, 0.6);
 }
 
-.home-overlay2 > img {
-  position: relative;
-  top: 50%;
+#home .home-overlay2 img {
+  position: absolute;
+  top: Calc(50% - 92px);
+  left: Calc(50% + 152px);
+  width: 100px;
 }
 
-.mouse-divText > p {
+#home .mouse-section {
+  position: absolute;
+  bottom: 7%;
+  left: Calc(50% - 43.165px);
+}
+
+#home .mouse-shape {
+  border: solid 2px white;
+  border-radius: 5px;
+  width: 30px;
+  height: 50px;
+  margin: 0px 26.1065px;
+}
+
+#home .mouse-wheel {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 15px 12px 0px;
+}
+
+#home .mouse-divText p {
   color: white;
-  text-align: center;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 100;
+  font-family: prime;
+  margin: 10px 0px 0px 0px;
 }
 
 /* .ce_rsce_opensauce_home {
