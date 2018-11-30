@@ -8,3 +8,15 @@ html, body {
 a {
   text-decoration: none;
 }
+
+.ce_rsce_opensauce_logo {
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+  top: 20px;
+  left: 20px;
+}
+
+.ce_rsce_opensauce_logo img {
+  width: 35%;
+}

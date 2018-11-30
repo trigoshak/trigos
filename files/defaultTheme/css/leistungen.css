@@ -1,3 +1,4 @@
+/* bruchts irgendwie - bisl verbugt oda so, ka */
 #leistungen .leistungen-leftDiv .teaser-boxes-item {
   width: 0;
   margin: 0;
@@ -8,26 +9,53 @@
   background-color: #2d2d2d;
   height: 723.2px;
   position: relative;
-  border-top: solid 1px white;
-  border-bottom: solid 1px white;
+}
+
+#leistungen .first {
+  margin: 135px 0px 75px 60px;
+}
+
+#leistungen .leistungen-leftDiv {
+  margin: 75px 0px 75px 60px;
+  position: relative;
 }
 
 #leistungen .leistungen-leftDiv h2 {
   font-family: verdana;
-  font-size: 1.4em;
+  font-size: 1.47em;
   color: white;
   margin: 0;
   font-weight: 900;
+  letter-spacing: -0.01em;
 }
 
 #leistungen .leistungen-leftDiv p {
   font-family: prime;
   color: white;
+  letter-spacing: 0.01em;
+}
+
+#leistungen .leistungen-leftDiv .leistungen-leftDiv-textLine {
+  position: absolute;
+  /* top: 85%; */
+  width: 70px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
 }
 
 #leistungen .leistungen-rightDiv {
   position: absolute;
   right: 0;
   top: 0;
-  width: 300px;
+  width: 750px;
+  box-shadow: 0px 0px 15px #222222;
+}
+
+#leistungen .leistungen-rightDiv {
+  display: none;
+}
+
+#leistungen .leistungen-rightDiv:nth-child(0n+2) {
+  display: block;
 }
