@@ -11,6 +11,8 @@
   position: relative;
 }
 
+/* Linke Seite - Kategorien */
+
 #leistungen .first {
   margin: 135px 0px 75px 60px;
 }
@@ -26,7 +28,6 @@
   color: white;
   margin: 0;
   font-weight: 900;
-  letter-spacing: -0.01em;
 }
 
 #leistungen .leistungen-leftDiv p {
@@ -43,6 +44,8 @@
   border-radius: 2px;
   background-color: white;
 }
+
+/* Rechte Seite - Laptop */
 
 #leistungen .leistungen-rightDiv {
   position: absolute;

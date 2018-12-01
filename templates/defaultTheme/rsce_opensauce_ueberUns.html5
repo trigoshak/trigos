@@ -6,14 +6,13 @@
 			</div>
 		<?php endif ?>
 		<?php if ($this->kategorie1): ?>
-			<?php echo $this->kategorie1 ?>
+			<h3><?php echo $this->kategorie1 ?></h3>
 		<?php endif ?>
-
 		<?php if ($this->kategorie1_text1): ?>
-			<p><?php echo $this->kategorie1_text1 ?></p>
+			<div class="kategorie1_text1"><?php echo $this->kategorie1_text1 ?></div>
 		<?php endif ?>
 		<?php if ($this->kategorie1_text2): ?>
-			<p><?php echo $this->kategorie1_text2 ?></p>
+			<div class="kategorie1_text2"><?php echo $this->kategorie1_text2 ?></div>
 		<?php endif ?>
 	</div>
 
@@ -24,13 +23,13 @@
 			</div>
 		<?php endif ?>
 		<?php if ($this->kategorie2): ?>
-			<?php echo $this->kategorie2 ?>
+			<h3><?php echo $this->kategorie2 ?></h3>
 		<?php endif ?>
 		<?php if ($this->kategorie2_text1): ?>
-			<p><?php echo $this->kategorie2_text1 ?></p>
+			<?php echo $this->kategorie2_text1 ?>
 		<?php endif ?>
 		<?php if ($this->kategorie2_text2): ?>
-			<p><?php echo $this->kategorie2_text2 ?></p>
+			<?php echo $this->kategorie2_text2 ?>
 		<?php endif ?>
 	</div>
 
@@ -41,14 +40,13 @@
 			</div>
 		<?php endif ?>
 		<?php if ($this->kategorie3): ?>
-			<?php echo $this->kategorie3 ?>
+			<h3><?php echo $this->kategorie3 ?></h3>
 		<?php endif ?>
 		<?php if ($this->kategorie3_text1): ?>
-			<p><?php echo $this->kategorie3_text1 ?></p>
+			<?php echo $this->kategorie3_text1 ?>
 		<?php endif ?>
-
 		<?php if ($this->kategorie3_text2): ?>
-			<p><?php echo $this->kategorie3_text2 ?></p>
+			<?php echo $this->kategorie3_text2 ?>
 		<?php endif ?>
 	</div>
 </section>

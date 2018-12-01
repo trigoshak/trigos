@@ -1,3 +1,5 @@
+/* Standard */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -8,6 +10,8 @@ html, body {
 a {
   text-decoration: none;
 }
+
+/* Logo */
 
 .ce_rsce_opensauce_logo {
   position: fixed;
