@@ -4,34 +4,43 @@
     font-family: Verdana;
 }
 
+#jobs {
+  height: 723.2px;
+}
+
+#jobs .upper-div {
+		text-align: center;
+		background-color: #2d2d2d;
+		font-weight: lighter;
+		padding: 2%;
+		color: white;
+		height: auto;
+}
+
 .upper-div h3 {
 	font-family: Prime;
 	font-size: 3em;
 	font-weight: lighter;
-	color: black;
-}
-
-.upper-div {
-		text-align: center;
-		background-color: white;
-		font-weight: lighter;
-		padding: 2%;
-		color: gray;
-		height: auto;
+	color: white;
 }
 
 .upper-div > p {
 	white-space: pre-wrap;
   font-size: inherit;
   font-weight: lighter;
-	margin: 0 25% 2% 25%;
+	margin: 3.3% 25% 2.1% 25%;
+}
+
+.upper-div a p {
+  color: #2d3c6b;
+  margin: 0px 0 50px 0;
 }
 
 .lower-div {
   text-align: center;
   background-color: white;
   font-weight: lighter;
-  padding: 2%;
+  padding: 6.3% 2%;
   color: black;
   height: 50%;
 }

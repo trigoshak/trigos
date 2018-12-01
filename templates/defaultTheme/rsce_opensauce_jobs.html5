@@ -5,7 +5,7 @@
 		<?php endif ?>
 
 		<?php if ($this->description): ?>
-			<p><?php echo $this->description ?></p>
+			<?php echo $this->description ?>
 		<?php endif ?>
 
 		<?php if ($this->url): ?>
