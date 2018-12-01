@@ -17,16 +17,20 @@
   margin: 0;
   color: white;
   position: absolute;
-  bottom: 3%;
-  right: 1.3%;
+  bottom: 0;
+  right: 0;
   font-family: verdana;
-  font-size: 2.3em;
+  font-size: 1.55em;
   font-weight: 100;
   text-transform: uppercase;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.19em;
+  background-color: #2d2d2d;
+  line-height: 84px;
+  padding: 0px 32px 0px 32px;
+  /* border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
   border-bottom: solid 4px white;
-  border-right: solid 4px white;
-  padding: 0px 7px 2px 2px;
+  border-right: solid 4px white; */
 }
 
 #ueberuns .kategorie1_text1 {
@@ -58,10 +62,61 @@
 
 #ueberuns .kategorie2 {
   margin: 3px 0px;
+  height: 84px;
+  background-color: #2d2d2d;
+}
+
+#ueberuns .kategorie2 .teaser-boxes-item-image {
+  display: none;
+}
+
+#ueberuns .kategorie2 h3 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: verdana;
+  font-size: 1.55em;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 84px;
+}
+
+#ueberuns .kategorie2 p {
+  display: none;
+}
+
+#ueberuns .kategorie2 ul {
+  display: none;
 }
 
 /* Kategorie 3 */
 
 #ueberuns .kategorie3 {
+  height: 84px;
+  background-color: #2d2d2d;
+}
+
+#ueberuns .kategorie3 .teaser-boxes-item-image {
+  display: none;
+}
+
+#ueberuns .kategorie3 h3 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: verdana;
+  font-size: 1.55em;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 84px;
+}
+
+#ueberuns .kategorie3 p {
+  display: none;
+}
+
+#ueberuns .kategorie3 ul {
   display: none;
 }
