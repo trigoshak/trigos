@@ -4,86 +4,6 @@
 	<?php if ($this->text_aufbau): ?>
 		<?php echo $this->text_aufbau ?>
 	<?php endif ?>
-
-	<div class="aufbau-innersection">
-		<div class="einkauf-section">
-			<div class="einkauf-muster">
-				<div class="einkauf-line1"></div>
-				<div class="einkauf-circle1"></div>
-				<div class="einkauf-line2"></div>
-				<div class="einkauf-circle2"></div>
-				<div class="einkauf-line3"></div>
-				<div class="einkauf-circle3"></div>
-				<div class="einkauf-line4"></div>
-			</div>
-			<div class="einkauf-beschreibung">
-					<?php if ($this->headline1): ?>
-						<h3><?php echo $this->headline1 ?></h3>
-					<?php endif ?>
-					<?php if ($this->text1): ?>
-						<?php echo $this->text1 ?>
-					<?php endif ?>
-			</div>
-		</div>
-		<div class="verwaltung-section">
-			<div class="verwaltung-muster">
-				<div class="veraltung-line1"></div>
-				<div class="verwaltung-circle1"></div>
-				<div class="verwaltung-line2"></div>
-				<div class="verwaltung-circle2"></div>
-			</div>
-			<div class="verwaltung-beschreibung">
-					<?php if ($this->headline2): ?>
-						<h3><?php echo $this->headline2 ?></h3>
-					<?php endif ?>
-					<?php if ($this->text2): ?>
-						<?php echo $this->text2 ?>
-					<?php endif ?>
-			</div>
-		</div>
-		<div class="verkauf-section">
-			<div class="verkauf-muster">
-				<div class="verkauf-circle1"></div>
-				<div class="verkauf-line1"></div>
-				<div class="verkauf-circle2"></div>
-				<div class="verkauf-line3"></div>
-				<div class="verkauf-circle3"></div>
-				<div class="verkauf-line4"></div>
-				<div class="verkauf-circle4"></div>
-				<div class="verkauf-line5"></div>
-				<div class="verkauf-circle5"></div>
-			</div>
-			<div class="verkauf-beschreibung">
-					<?php if ($this->headline3): ?>
-						<h3><?php echo $this->headline3 ?></h3>
-					<?php endif ?>
-					<?php if ($this->text3): ?>
-						<?php echo $this->text3 ?>
-					<?php endif ?>
-			</div>
-		</div>
-		<div class="rechnungswesen-section">
-			<div class="rechnungswesen-muster">
-				<div class="rechnungswesen-circle1"></div>
-				<div class="rechnungswesen-line1"></div>
-				<div class="rechnungswesen-circle2"></div>
-				<div class="rechnungswesen-line3"></div>
-				<div class="rechnungswesen-circle3"></div>
-				<div class="rechnungswesen-line4"></div>
-				<div class="rechnungswesen-circle4"></div>
-				<div class="rechnungswesen-line5"></div>
-				<div class="rechnungswesen-circle5"></div>
-			</div>
-			<div class="rechnungswesen-beschreibung">
-					<?php if ($this->headline4): ?>
-						<h3><?php echo $this->headline4 ?></h3>
-					<?php endif ?>
-					<?php if ($this->text4): ?>
-						<?php echo $this->text4 ?>
-					<?php endif ?>
-			</div>
-		</div>
-	</div>
 </div>
 
 <div class="aufbau-rightside">
@@ -93,5 +13,83 @@
 	<?php endif ?>
 </div>
 
-
+<div class="aufbau-innersection">
+	<div class="einkauf-section">
+		<div class="einkauf-muster">
+			<div class="einkauf-line1"></div>
+			<div class="einkauf-circle1"></div>
+			<div class="einkauf-line2"></div>
+			<div class="einkauf-circle2"></div>
+			<div class="einkauf-line3"></div>
+			<div class="einkauf-circle3"></div>
+			<div class="einkauf-line4"></div>
+		</div>
+		<div class="einkauf-beschreibung">
+				<?php if ($this->headline1): ?>
+					<h3><?php echo $this->headline1 ?></h3>
+				<?php endif ?>
+				<?php if ($this->text1): ?>
+					<?php echo $this->text1 ?>
+				<?php endif ?>
+		</div>
+	</div>
+	<div class="verwaltung-section">
+		<div class="verwaltung-muster">
+			<div class="veraltung-line1"></div>
+			<div class="verwaltung-circle1"></div>
+			<div class="verwaltung-line2"></div>
+			<div class="verwaltung-circle2"></div>
+		</div>
+		<div class="verwaltung-beschreibung">
+				<?php if ($this->headline2): ?>
+					<h3><?php echo $this->headline2 ?></h3>
+				<?php endif ?>
+				<?php if ($this->text2): ?>
+					<?php echo $this->text2 ?>
+				<?php endif ?>
+		</div>
+	</div>
+	<div class="verkauf-section">
+		<div class="verkauf-muster">
+			<div class="verkauf-circle1"></div>
+			<div class="verkauf-line1"></div>
+			<div class="verkauf-circle2"></div>
+			<div class="verkauf-line3"></div>
+			<div class="verkauf-circle3"></div>
+			<div class="verkauf-line4"></div>
+			<div class="verkauf-circle4"></div>
+			<div class="verkauf-line5"></div>
+			<div class="verkauf-circle5"></div>
+		</div>
+		<div class="verkauf-beschreibung">
+				<?php if ($this->headline3): ?>
+					<h3><?php echo $this->headline3 ?></h3>
+				<?php endif ?>
+				<?php if ($this->text3): ?>
+					<?php echo $this->text3 ?>
+				<?php endif ?>
+		</div>
+	</div>
+	<div class="rechnungswesen-section">
+		<div class="rechnungswesen-muster">
+			<div class="rechnungswesen-circle1"></div>
+			<div class="rechnungswesen-line1"></div>
+			<div class="rechnungswesen-circle2"></div>
+			<div class="rechnungswesen-line3"></div>
+			<div class="rechnungswesen-circle3"></div>
+			<div class="rechnungswesen-line4"></div>
+			<div class="rechnungswesen-circle4"></div>
+			<div class="rechnungswesen-line5"></div>
+			<div class="rechnungswesen-circle5"></div>
+		</div>
+		<div class="rechnungswesen-beschreibung">
+				<?php if ($this->headline4): ?>
+					<h3><?php echo $this->headline4 ?></h3>
+				<?php endif ?>
+				<?php if ($this->text4): ?>
+					<?php echo $this->text4 ?>
+				<?php endif ?>
+		</div>
+	</div>
+</div>
 </section>

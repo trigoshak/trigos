@@ -19,6 +19,7 @@
   font-family: verdana;
   padding: 75px;
   box-sizing: border-box;
+  height: 470px;
 }
 
 #aufbau .aufbau-leftside h2 {
@@ -27,37 +28,8 @@
   margin: 26px 0;
 }
 
-#aufbau .aufbau-leftside h3 {
-  font-family: prime;
-  font-weight: 900;
-  font-size: 1.4em;
-  margin: 30px 0 15px;
-}
-
 #aufbau .aufbau-leftside > p {
   line-height: 1.5em;
-}
-
-#aufbau .aufbau-leftside .einkauf-section {
-  display: inline-block;
-  width: 50%;
-  margin: 25px 0;
-}
-
-#aufbau .aufbau-leftside .verwaltung-section {
-  float: right;
-  width: 50%;
-  margin: 25px 0;
-}
-
-#aufbau .aufbau-leftside .verkauf-section {
-  display: inline-block;
-  width: 50%;
-}
-
-#aufbau .aufbau-leftside .rechnungswesen-section {
-  float: right;
-  width: 50%;
 }
 
 /* Unterrichtskonzept */
@@ -70,6 +42,7 @@
   font-family: verdana;
   padding: 75px;
   box-sizing: border-box;
+  height: 470px;
 }
 
 #aufbau .aufbau-rightside h2 {
@@ -80,4 +53,51 @@
 
 #aufbau .aufbau-rightside > p {
   line-height: 1.5em;
+}
+
+/* Organigramm */
+
+#aufbau .aufbau-innersection h3 {
+  font-family: prime;
+  font-weight: 900;
+  font-size: 1.4em;
+  margin: 20px 0 30px;
+  color: white;
+  text-align: center;
+}
+
+#aufbau .aufbau-innersection p {
+  font-family: verdana;
+  color: white;
+  text-align: center;
+}
+
+#aufbau .aufbau-innersection {
+  padding: 0 40px;
+}
+
+#aufbau .aufbau-innersection > div {
+  float: left;
+}
+
+#aufbau .aufbau-innersection > div {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+#aufbau .aufbau-innersection > div > div {
+  border: solid 3px white;
+  border-radius: 8px;
+}
+
+#aufbau .aufbau-innersection > div > div p {
+  background-color: white;
+  margin: 0;
+  padding: 16px;
+  color: #2d2d2d;
+}
+
+.einkauf-muster, .verwaltung-muster, .verkauf-muster, .rechnungswesen-muster {
+  display: none;
 }
