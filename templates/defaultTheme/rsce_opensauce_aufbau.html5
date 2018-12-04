@@ -21,7 +21,7 @@
 						<h3><?php echo $this->headline1 ?></h3>
 					<?php endif ?>
 					<?php if ($this->text1): ?>
-						<p><?php echo $this->text1 ?></p>
+						<?php echo $this->text1 ?>
 					<?php endif ?>
 			</div>
 		</div>
@@ -37,7 +37,7 @@
 						<h3><?php echo $this->headline2 ?></h3>
 					<?php endif ?>
 					<?php if ($this->text2): ?>
-						<p><?php echo $this->text2 ?></p>
+						<?php echo $this->text2 ?>
 					<?php endif ?>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 						<h3><?php echo $this->headline3 ?></h3>
 					<?php endif ?>
 					<?php if ($this->text3): ?>
-						<p><?php echo $this->text3 ?></p>
+						<?php echo $this->text3 ?>
 					<?php endif ?>
 			</div>
 		</div>
@@ -72,14 +72,14 @@
 				<div class="rechnungswesen-line4"></div>
 				<div class="rechnungswesen-circle4"></div>
 				<div class="rechnungswesen-line5"></div>
-				<div class="rechnungwesen-circle5"></div>
+				<div class="rechnungswesen-circle5"></div>
 			</div>
 			<div class="rechnungswesen-beschreibung">
 					<?php if ($this->headline4): ?>
 						<h3><?php echo $this->headline4 ?></h3>
 					<?php endif ?>
 					<?php if ($this->text4): ?>
-						<p><?php echo $this->text4 ?></p>
+						<?php echo $this->text4 ?>
 					<?php endif ?>
 			</div>
 		</div>
