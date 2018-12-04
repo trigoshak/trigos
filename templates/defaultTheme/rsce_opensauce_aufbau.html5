@@ -1,8 +1,8 @@
 <section class="teaser-boxes <?php echo $this->class ?>"<?php echo $this->cssID ?>>
 <div class="aufbau-leftside">
 	<h2 class="text-tri">Tri</h2> <h2 class="text-os">os</h2> <h2 class="text-rest">Unternehmensgegenstand</h2>
-	<?php if ($this->text-aufbau): ?>
-		<p><?php echo $this->text-aufbau ?></p>
+	<?php if ($this->text_aufbau): ?>
+		<?php echo $this->text_aufbau ?>
 	<?php endif ?>
 
 	<div class="aufbau-innersection">
@@ -88,8 +88,8 @@
 
 <div class="aufbau-rightside">
 	<h2>Unterrichtskonzept</h2>
-	<?php if ($this->text-ug): ?>
-		<p><?php echo $this->text-ug ?></p>
+	<?php if ($this->text_ug): ?>
+		<p><?php echo $this->text_ug ?></p>
 	<?php endif ?>
 </div>
 

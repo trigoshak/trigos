@@ -47,14 +47,14 @@ return array(
 			),
 
 			// Für NACH Animationen (Aufbau)
-			'text-aufbau' => array(
+			'text_aufbau' => array(
 				'label' => array('Text für Aufbau', 'machen Sie bitte Absätze mit einem Enter zeichen!'),
 				'inputType' => 'text',
 				'eval' => array('rte' => 'tinyMCE'),
 			),
 
 			// Unternehmensgegenstand (ug)
-			'text-ug' => array(
+			'text_ug' => array(
 				'label' => array('Text für Unternehmensgegenstand', 'machen Sie bitte Absätze mit einem Enter zeichen!'),
 				'inputType' => 'text',
 				'eval' => array('rte' => 'tinyMCE'),
