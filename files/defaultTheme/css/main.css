@@ -13,7 +13,7 @@ a {
 
 /* Logo */
 
-.ce_rsce_opensauce_logo {
+.inside > .ce_rsce_opensauce_logo {
   position: fixed;
   z-index: 1;
   margin: 0;
@@ -21,6 +21,6 @@ a {
   left: 20px;
 }
 
-.ce_rsce_opensauce_logo img {
+.inside > .ce_rsce_opensauce_logo img {
   width: 35%;
 }
