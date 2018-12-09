@@ -1,3 +1,13 @@
 #menue {
   display: none;
+  color: white;
+}
+
+#menue .menu-folded_out {
+  background-color: RGB(0, 0, 0, 0.92);
+  width: 270px;
+  height: 723.2px;
+  position: fixed;
+  z-index: 1;
+  right: 0;
 }

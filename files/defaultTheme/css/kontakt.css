@@ -1,5 +1,9 @@
 #footer-placeholder {
   height: 410px;
+  position: absolute;
+  bottom: -410;
+  width: 100%;
+  z-index: -2;
 }
 
 #footer {
@@ -18,10 +22,10 @@
 
 #footer .verticalLine {
   background-color: #2d2d2d;
-  width: 3px;
+  width: 2.5px;
   height: 230px;
-  border-radius: 1.5px;
-  margin: 0 75px;
+  border-radius: 5px;
+  margin: 0 85px;
 }
 
 /* Logo */
@@ -31,8 +35,7 @@
 }
 
 #footer .logo-section .logo-center {
-  line-height: 230px;
-  display: inline-block;
+  margin: 71px 0;
 }
 
 #footer .logo-section h1 {
@@ -42,7 +45,7 @@
 /* Kontakt */
 
 #footer .contact-section {
-  padding: 30px 60px;
+  padding: 30px 0;
 }
 
 #footer .contact-section .contact-writeUs-email {
@@ -50,7 +53,7 @@
 }
 
 #footer .contact-section .contact-writeUs-email input {
-  padding: 2px 6px;
+  padding: 3px 14px 3px 6px;
   color: #2d2d2d;
   font-family: verdana;
   background-color: transparent;
@@ -72,18 +75,37 @@
   font-weight: 100;
 }
 
+#footer .contact-section .contact-location-address {
+  margin: 19.2px 25px 0;
+}
+
+#footer .contact-section .contact-location-image-center {
+  width: 45%;
+  padding: 24px;
+}
+
 #footer .contact-section .contact-location p {
   color: #2d2d2d;
   font-family: verdana;
-  font-size: 0.85em;
+  font-size: 0.925em;
   font-weight: 100;
+  margin: 0 0 15px;
 }
 
 #footer .contact-section .contact-bottom div {
   float: left;
 }
 
+#footer .contact-section .contact-followUs-image-center {
+  width: 66.6px;
+  padding: 24px 0 24px 24px;
+}
+
 /* Impressum */
+
+#footer .impressum-section .impressum-section-center {
+  margin: 17px 0;
+}
 
 #footer .impressum-section ul {
   margin: 0;
@@ -92,7 +114,7 @@
 }
 
 #footer .impressum-section ul li {
-  margin: 25px 0;
+  margin: 35px 0;
 }
 
 #footer .impressum-section ul a {
