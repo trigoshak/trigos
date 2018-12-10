@@ -22,6 +22,7 @@
 	font-size: 3em;
 	font-weight: lighter;
 	color: white;
+  margin-top: 58.005px;
 }
 
 .upper-div > p {
@@ -33,14 +34,14 @@
 
 .upper-div a p {
   color: #2d3c6b;
-  margin: 0px 0 50px 0;
+  margin: 0px 0 79px 0;
 }
 
 .lower-div {
   text-align: center;
   background-color: white;
   font-weight: lighter;
-  padding: 6.3% 2%;
+  padding: 5.25% 2%;
   color: black;
   height: 50%;
 }

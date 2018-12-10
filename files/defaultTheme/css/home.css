@@ -44,7 +44,16 @@
   height: 6px;
   background-color: white;
   border-radius: 50%;
-  margin: 15px 12px 0px;
+  margin: 12px 12px 0px;
+  animation: mouseWheelAnim ease-in 4.5s 3s infinite;
+}
+
+@keyframes mouseWheelAnim {
+  0% {margin-top: 12px; opacity: 1;}
+  10% {margin-top: 22px; opacity: 0;}
+  20% {margin-top: 12px; opacity: 0;}
+  22% {margin-top: 12px; opacity: 1;}
+  100% {margin-top: 12px; opacity: 1;}
 }
 
 #home .mouse-divText p {
