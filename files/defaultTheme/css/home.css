@@ -29,6 +29,7 @@
   position: absolute;
   bottom: 7%;
   left: Calc(50% - 43.165px);
+  cursor: pointer;
 }
 
 #home .mouse-shape {

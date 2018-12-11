@@ -24,6 +24,7 @@
 p {
   margin-top: 0.5em;
   padding-top: 0px;
+  color: white;
 }
 
 .menu-folded_in:hover .menu-folded_out {

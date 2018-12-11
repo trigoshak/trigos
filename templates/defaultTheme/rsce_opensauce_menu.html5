@@ -14,24 +14,34 @@
 		</div>
 		<div class="menu-navsection">
 			<div id="menu-leistungen-div" class="menuepunkt">
+			<a href="#leistungen">
 				<p class="numbering">Eins</p>
 				<p onclick="leistungen">Leistungen</p>
+			</a>
 			</div>
 			<div id="menu-ueberuns-div" class="menuepunkt">
+			<a href="#ueberuns">
 				<p class="numbering">Zwei</p>
 				<p onclick="ueberuns">Über uns</p>
+			</a>
 			</div>
 			<div id="menu-aufbau-div" class="menuepunkt">
+			<a href="#aufbau">
 				<p class="numbering">Drei</p>
 				<p onclick="aufbau">Aufbau</p>
+			</a>
 			</div>
 			<div id="menu-jobs-div" class="menuepunkt">
+			<a href="#jobs">
 				<p class="numbering">Vier</p>
 				<p onclick="jobs">Jobs</p>
+			</a>
 			</div>
 			<div id="menu-kontakt-div" class="menuepunkt">
+			<a href="#jobs">
 				<p class="numbering">Fünf</p>
 				<p onclick="kontakt">Konkakt</p>
+			</a>
 			</div>
 			<div id="menu-webshop-div" class="menuepunkt">
 				<p class="numbering">Sechs</p>

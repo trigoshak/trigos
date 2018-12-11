@@ -18,15 +18,13 @@
 				<?php echo $this->alt ?>
 			<?php endif ?>
 		</div>
-		<div class="mouse-section">
-			<a href="#leistungen">
+		<div class="mouse-section" onclick="myFunction()">
 				<div class="mouse-shape">
 					<div class="mouse-wheel"></div>
 				</div>
 				<div class="mouse-divText">
 					<p>Scroll down</p>
 				</div>
-			</a>
 		</div>
 	</div>
 </section>
