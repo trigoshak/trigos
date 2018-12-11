@@ -19,13 +19,14 @@
 			<?php endif ?>
 		</div>
 		<div class="mouse-section">
-			<div class="mouse-shape">
-				<div class="mouse-wheel">
+			<a href="#leistungen">
+				<div class="mouse-shape">
+					<div class="mouse-wheel"></div>
 				</div>
-			</div>
-			<div class="mouse-divText">
-				<p>Scroll down</p>
-			</div>
+				<div class="mouse-divText">
+					<p>Scroll down</p>
+				</div>
+			</a>
 		</div>
 	</div>
 </section>
