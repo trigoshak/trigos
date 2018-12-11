@@ -1,12 +1,50 @@
 #menue {
-  display: none;
   color: white;
+  font-size: 1em;
+  font-family: Prime;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.menuepunkt {
+  padding: 2em 2em 0.5em 3.5em;
+}
+
+.numbering {
+    color: #2d2d2d;
+    padding: 0px;
+    margin: 0px;
+}
+
+#homepunkt {
+  padding: 2em 2em 0.5em 3.5em;
+  margin-bottom: 2.5em;
+}
+
+p {
+  margin-top: 0.5em;
+  padding-top: 0px;
+}
+
+.menu-folded_in:hover .menu-folded_out {
+  display: block;
+}
+
+.menu-folded_in {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: RGB(0, 0, 0, 0.92);
+    position: fixed;
+    z-index: 1;
+    right: 0;
 }
 
 #menue .menu-folded_out {
+  display: block;
   background-color: RGB(0, 0, 0, 0.92);
-  width: 270px;
-  height: 723.2px;
+  width: 17%;
+  height: 100%;
   position: fixed;
   z-index: 1;
   right: 0;

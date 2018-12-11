@@ -1,44 +1,46 @@
 <section class="<?php echo $this->class ?>"<?php echo $this->cssID ?>>
 
-	<div class="menu-folded_in">
-		<?php // TODO: ICON Hinzufügen ?>
-	</div>
+<div id="menu_wrapper">
+<div class="menu-folded_in">
+	<?php // TODO: ICON Hinzufügen ?>
+</div>
 
-	<div class="menu-folded_out">
-		<div class="menu-hoverline-left"></div>
-		<div class="menu-background">
-			<div class="menu-uppersection">
-				<p onclick="home">Home</p>
-				<?php // TODO: Ichon Hizufügen ?>
+<div class="menu-folded_out">
+	<div class="menu-hoverline-left"></div>
+	<div class="menu-background">
+		<div class="menu-uppersection">
+			<p id="homepunkt" onclick="home">Home</p>
+			<?php // TODO: Ichon Hizufügen ?>
+		</div>
+		<div class="menu-navsection">
+			<div id="menu-leistungen-div" class="menuepunkt">
+				<p class="numbering">Eins</p>
+				<p onclick="leistungen">Leistungen</p>
 			</div>
-			<div class="menu-navsection">
-				<div class="menu-leistungen-div">
-					<p>Eins</p>
-					<p onclick="leistungen">Leistungen</p>
-				</div>
-				<div class="menu-ueberuns-div">
-					<p>Zwei</p>
-					<p onclick="ueberuns">Über uns</p>
-				</div>
-				<div class="menu-aufbau-div">
-					<p>Drei</p>
-					<p onclick="aufbau">Aufbau</p>
-				</div>
-				<div class="menu-jobs-div">
-					<p>Vier</p>
-					<p onclick="jobs">Jobs</p>
-				</div>
-				<div class="menu-kontakt-div">
-					<p>Fünf</p>
-					<p onclick="kontakt">Konkakt</p>
-				</div>
-				<div class="menu-webshop-div">
-					<p>Sechs</p>
-					<a href="www.trigos.eu">
-						 <p>Webshop</p>
-					</a>
-				</div>
+			<div id="menu-ueberuns-div" class="menuepunkt">
+				<p class="numbering">Zwei</p>
+				<p onclick="ueberuns">Über uns</p>
+			</div>
+			<div id="menu-aufbau-div" class="menuepunkt">
+				<p class="numbering">Drei</p>
+				<p onclick="aufbau">Aufbau</p>
+			</div>
+			<div id="menu-jobs-div" class="menuepunkt">
+				<p class="numbering">Vier</p>
+				<p onclick="jobs">Jobs</p>
+			</div>
+			<div id="menu-kontakt-div" class="menuepunkt">
+				<p class="numbering">Fünf</p>
+				<p onclick="kontakt">Konkakt</p>
+			</div>
+			<div id="menu-webshop-div" class="menuepunkt">
+				<p class="numbering">Sechs</p>
+				<a href="www.trigos.eu">
+					 <p>Webshop</p>
+				</a>
 			</div>
 		</div>
 	</div>
+</div>
+</div>
 </section>

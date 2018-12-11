@@ -41,14 +41,15 @@
   text-align: center;
   background-color: white;
   font-weight: lighter;
-  padding: 5.25% 2%;
+  padding: 3.25% 2%;
   color: black;
   height: 50%;
 }
 
 div.kategorie-item {
     float: left;
-    width: 10%;
+    width: 25%;
+    padding: 0em 2.5em 2.25em 2.25em;
     height: auto;
     box-sizing: border-box;
     margin: 0;
@@ -56,7 +57,9 @@ div.kategorie-item {
 
 div.kategorie-item h4 {
   white-space: pre-wrap;
+  font-family: prime;
   font-size: inherit;
-  font-weight: lighter;
+  font-weight: 300;
+  padding-top: 1em;
   color: #2d2d2d;
 }
