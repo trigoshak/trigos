@@ -1,0 +1,124 @@
+#footer-placeholder {
+  height: 410px;
+  position: absolute;
+  bottom: -410;
+  width: 100%;
+  z-index: -2;
+}
+
+#footer {
+  background-color: #000000;
+  height: 230px;
+  padding: 90px 150px;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer > div {
+  float: left;
+}
+
+#footer .verticalLine {
+  background-color: #2d2d2d;
+  width: 2.5px;
+  height: 230px;
+  border-radius: 5px;
+  margin: 0 85px;
+}
+
+/* Logo */
+
+#footer .logo-section {
+  height: 100%;
+}
+
+#footer .logo-section .logo-center {
+  margin: 71px 0;
+}
+
+#footer .logo-section h1 {
+  margin: 0;
+}
+
+/* Kontakt */
+
+#footer .contact-section {
+  padding: 30px 0;
+}
+
+#footer .contact-section .contact-writeUs-email {
+  margin: 13px 0 27px;
+}
+
+#footer .contact-section .contact-writeUs-email input {
+  padding: 3px 14px 3px 6px;
+  color: #2d2d2d;
+  font-family: verdana;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid #2d2d2d;
+  outline: none;
+  width: 79%;
+}
+
+#footer .contact-section .contact-writeUs-email input::-webkit-input-placeholder {
+  color: #2d2d2d;
+}
+
+#footer .contact-section h6 {
+  color: white;
+  font-family: verdana;
+  font-size: 1em;
+  margin: 0;
+  font-weight: 100;
+}
+
+#footer .contact-section .contact-location-address {
+  margin: 19.2px 25px 0;
+}
+
+#footer .contact-section .contact-location-image-center {
+  width: 45%;
+  padding: 24px;
+}
+
+#footer .contact-section .contact-location p {
+  color: #2d2d2d;
+  font-family: verdana;
+  font-size: 0.925em;
+  font-weight: 100;
+  margin: 0 0 15px;
+}
+
+#footer .contact-section .contact-bottom div {
+  float: left;
+}
+
+#footer .contact-section .contact-followUs-image-center {
+  width: 66.6px;
+  padding: 24px 0 24px 24px;
+}
+
+/* Impressum */
+
+#footer .impressum-section .impressum-section-center {
+  margin: 17px 0;
+}
+
+#footer .impressum-section ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#footer .impressum-section ul li {
+  margin: 35px 0;
+}
+
+#footer .impressum-section ul a {
+  color: white;
+  font-family: verdana;
+  font-size: 1em;
+}

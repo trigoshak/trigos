@@ -1,0 +1,14 @@
+#jobsextern {
+  background-color: #2d2d2d;
+  height: 313.5px;
+}
+
+#jobsextern p {
+  color: white;
+  font-size: 3em;
+  font-family: verdana;
+  position: fixed;
+  top: 10%;
+  left: Calc(50% - 300px);
+  width: 600px;
+}

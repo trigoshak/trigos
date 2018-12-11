@@ -1,0 +1,8 @@
+<a href="<?php echo $this->url ?>" target="_blank">
+	<?php if ($image = $this->getImageObject($this->image, $this->size)): ?>
+		<?php $image->picture['alt'] = $this->alt ?: $image->picture['alt'] ?>
+		<?php $this->insert('picture_default', $image->picture) ?>
+	<?php else: ?>
+		<?php echo $this->alt ?>
+	<?php endif ?>
+</a>
