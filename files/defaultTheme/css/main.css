@@ -15,10 +15,10 @@ a {
 /* Logo */
 
 .inside > .ce_rsce_opensauce_logo {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   margin: 0;
-  top: 20px;
+  top: 741.5px;
   left: 20px;
 }
 

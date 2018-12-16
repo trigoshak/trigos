@@ -34,14 +34,14 @@
 
 .upper-div a p {
   color: #2d3c6b;
-  margin: 0px 0 79px 0;
+  margin: 0px 610px 79px;
 }
 
 .lower-div {
   text-align: center;
   background-color: white;
   font-weight: lighter;
-  padding: 3.25% 2%;
+  padding: 4.1% 2%;
   color: black;
   height: 50%;
 }
@@ -55,11 +55,16 @@ div.kategorie-item {
     margin: 0;
 }
 
+.kategorie-item-image {
+  width: 52%;
+  padding: 0 24%;
+}
+
 div.kategorie-item h4 {
   white-space: pre-wrap;
-  font-family: prime;
+  font-family: Verdana;
   font-size: inherit;
-  font-weight: 300;
-  padding-top: 1em;
+  font-weight: 900;
   color: #2d2d2d;
+  font-size: 1.1em;
 }

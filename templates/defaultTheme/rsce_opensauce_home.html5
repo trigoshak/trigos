@@ -11,12 +11,14 @@
 	<div class="home-overlay1">
 		<div class="home-overlay2">
 				<h2 class="headline">trigos</h2>
-			<?php if ($logo = $this->getImageObject($this->logo, $this->size)): ?>
-				<?php $logo->picture['alt'] = $this->alt ?: $logo->picture['alt'] ?>
-				<?php $this->insert('picture_default', $logo->picture) ?>
-			<?php else: ?>
-				<?php echo $this->alt ?>
-			<?php endif ?>
+				<a href="<?php echo $this->url ?>">
+					<?php if ($logo = $this->getImageObject($this->logo, $this->size)): ?>
+						<?php $logo->picture['alt'] = $this->alt ?: $logo->picture['alt'] ?>
+						<?php $this->insert('picture_default', $logo->picture) ?>
+					<?php else: ?>
+						<?php echo $this->alt ?>
+					<?php endif ?>
+				</a>
 		</div>
 		<div class="mouse-section">
 			<div class="mouse-shape">
