@@ -7,7 +7,9 @@
 }
 
 .menuepunkt {
-  padding: 2em 2em 0.5em 3.5em;
+  margin: 2em 2em 2.4em 3.5em;
+  position: relative;
+  cursor: pointer;
 }
 
 .numbering {
@@ -17,8 +19,9 @@
 }
 
 #homepunkt {
-  padding: 2em 2em 0.5em 3.5em;
-  margin-bottom: 2.5em;
+  margin: 4em 7.5em 4em 3.5em;
+  padding: 10px 10px 10px 0px;
+  cursor: pointer;
 }
 
 p {
@@ -27,26 +30,59 @@ p {
   color: white;
 }
 
-.menu-folded_in:hover .menu-folded_out {
+#menue #menu-folded_in {
   display: block;
+  background-color: RGB(0, 0, 0, 0.95);
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 52px;
+  width: 29px;
+  height: 23.488px;
+  padding: 13px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
 }
 
-.menu-folded_in {
-    display: none;
-    width: 50px;
-    height: 50px;
-    background-color: RGB(0, 0, 0, 0.92);
-    position: fixed;
-    z-index: 1;
-    right: 0;
+#menue #menu-folded_in img {
+  vertical-align: bottom;
 }
 
-#menue .menu-folded_out {
+#menue #menu-folded_out {
   display: block;
-  background-color: RGB(0, 0, 0, 0.92);
+  background-color: RGB(0, 0, 0, 0.95);
   width: 17%;
   height: 100%;
   position: fixed;
   z-index: 1;
-  right: 0;
+  right: -258.263px;
+  transition: ease-out 0.3s;
 }
+
+#menue .menu-uppersection {
+  margin-top: 50px;
+  position: relative;
+}
+
+#menue .menu-uppersection .menu-uppersection-icon {
+  position: absolute;
+  width: 14%;
+  top: -11px;
+  right: 35px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Hoverline */
+
+/* #menue .menu-folded_out .menu-hoverline-left {
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: -56.006px;
+}
+
+#wrapper #container #main .inside .mod_article.active + #menue {
+  background-color: red;
+} */

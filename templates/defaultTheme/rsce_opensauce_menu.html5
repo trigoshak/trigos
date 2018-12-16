@@ -1,51 +1,60 @@
 <section class="<?php echo $this->class ?>"<?php echo $this->cssID ?>>
 
 <div id="menu_wrapper">
-<div class="menu-folded_in">
-	<?php // TODO: ICON Hinzufügen ?>
+<div id="menu-folded_in" onclick="menuClick()">
+	<?php if ($image2 = $this->getImageObject($this->image2, $this->size)): ?>
+		<?php $image2->picture['alt'] = $this->alt ?: $image2->picture['alt'] ?>
+		<?php $this->insert('picture_default', $image2->picture) ?>
+	<?php else: ?>
+		<?php echo $this->alt ?>
+	<?php endif ?>
 </div>
 
-<div class="menu-folded_out">
-	<div class="menu-hoverline-left"></div>
+<div id="menu-folded_out">
 	<div class="menu-background">
 		<div class="menu-uppersection">
-			<p id="homepunkt" onclick="home">Home</p>
-			<?php // TODO: Ichon Hizufügen ?>
+			<div class="menu-uppersection-home">
+				<p id="homepunkt">Home</p>
+			</div>
+			<div class="menu-uppersection-icon" onclick="menuCloseClick()">
+			<?php if ($image = $this->getImageObject($this->image, $this->size)): ?>
+				<?php $image->picture['alt'] = $this->alt ?: $image->picture['alt'] ?>
+				<?php $this->insert('picture_default', $image->picture) ?>
+			<?php else: ?>
+				<?php echo $this->alt ?>
+			<?php endif ?>
+			</div>
 		</div>
 		<div class="menu-navsection">
 			<div id="menu-leistungen-div" class="menuepunkt">
-			<a href="#leistungen">
+				<div class="menu-hoverline-left"></div>
 				<p class="numbering">Eins</p>
 				<p onclick="leistungen">Leistungen</p>
-			</a>
 			</div>
 			<div id="menu-ueberuns-div" class="menuepunkt">
-			<a href="#ueberuns">
+				<div class="menu-hoverline-left"></div>
 				<p class="numbering">Zwei</p>
 				<p onclick="ueberuns">Über uns</p>
-			</a>
 			</div>
 			<div id="menu-aufbau-div" class="menuepunkt">
-			<a href="#aufbau">
+				<div class="menu-hoverline-left"></div>
 				<p class="numbering">Drei</p>
 				<p onclick="aufbau">Aufbau</p>
-			</a>
 			</div>
 			<div id="menu-jobs-div" class="menuepunkt">
-			<a href="#jobs">
+				<div class="menu-hoverline-left"></div>
 				<p class="numbering">Vier</p>
 				<p onclick="jobs">Jobs</p>
-			</a>
 			</div>
 			<div id="menu-kontakt-div" class="menuepunkt">
-			<a href="#jobs">
+				<div class="menu-hoverline-left"></div>
 				<p class="numbering">Fünf</p>
 				<p onclick="kontakt">Konkakt</p>
-			</a>
 			</div>
 			<div id="menu-webshop-div" class="menuepunkt">
+				<div class="menu-hoverline-left"></div>
 				<p class="numbering">Sechs</p>
-				<a href="www.trigos.eu">
+				<a href="www.trigos.eu" target="_blank">
 					 <p>Webshop</p>
 				</a>
 			</div>
