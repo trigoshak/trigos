@@ -1,5 +1,5 @@
 <section class="ueberuns <?php echo $this->class ?>"<?php echo $this->cssID ?>>
-	<div class="kategorie1">
+	<div class="kategorie1 kategorie ueberUnsActive" id="kategorie1">
 		<?php if ($image1 = $this->getImageObject($this->image1, $this->size)): ?>
 			<div class="teaser-boxes-item-image">
 				<?php $this->insert('picture_default', $image1->picture) ?>
@@ -16,7 +16,7 @@
 		<?php endif ?>
 	</div>
 
-	<div class="kategorie2">
+	<div class="kategorie2 kategorie" id="kategorie2">
 		<?php if ($image2 = $this->getImageObject($this->image2, $this->size)): ?>
 			<div class="teaser-boxes-item-image">
 				<?php $this->insert('picture_default', $image2->picture) ?>
@@ -26,14 +26,14 @@
 			<h3><?php echo $this->kategorie2 ?></h3>
 		<?php endif ?>
 		<?php if ($this->kategorie2_text1): ?>
-			<?php echo $this->kategorie2_text1 ?>
+			<div class="kategorie2_text1"><?php echo $this->kategorie2_text1 ?></div>
 		<?php endif ?>
 		<?php if ($this->kategorie2_text2): ?>
-			<?php echo $this->kategorie2_text2 ?>
+			<div class="kategorie2_text2"><?php echo $this->kategorie2_text2 ?></div>
 		<?php endif ?>
 	</div>
 
-	<div class="kategorie3">
+	<div class="kategorie3 kategorie" id="kategorie3">
 		<?php if ($image3 = $this->getImageObject($this->image3, $this->size)): ?>
 			<div class="teaser-boxes-item-image">
 				<?php $this->insert('picture_default', $image3->picture) ?>
@@ -43,10 +43,10 @@
 			<h3><?php echo $this->kategorie3 ?></h3>
 		<?php endif ?>
 		<?php if ($this->kategorie3_text1): ?>
-			<?php echo $this->kategorie3_text1 ?>
+			<div class="kategorie3_text1"><?php echo $this->kategorie3_text1 ?></div>
 		<?php endif ?>
 		<?php if ($this->kategorie3_text2): ?>
-			<?php echo $this->kategorie3_text2 ?>
+			<div class="kategorie3_text2"><?php echo $this->kategorie3_text2 ?></div>
 		<?php endif ?>
 	</div>
 </section>

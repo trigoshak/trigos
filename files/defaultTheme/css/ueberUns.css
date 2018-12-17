@@ -1,3 +1,5 @@
+/* Allgemein */
+
 #ueberuns {
   height: 723.2px;
   background-color: white;
@@ -7,13 +9,61 @@
   vertical-align: bottom;
 }
 
-/* Kategorie 1 */
-
-#ueberuns .kategorie1 {
+#ueberuns .kategorie {
+  height: 84px;
+  background-color: #2d2d2d;
+  transition: ease-out 0.3s;
   position: relative;
 }
 
-#ueberuns .kategorie1 h3 {
+#ueberuns .kategorie:nth-child(2) {
+  margin: 3px 0;
+}
+
+#ueberuns .kategorie .teaser-boxes-item-image {
+  display: none;
+}
+
+#ueberuns .kategorie h3 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: verdana;
+  font-size: 1.55em;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 84px;
+}
+
+#ueberuns .kategorie p {
+  display: none;
+}
+
+#ueberuns .kategorie ul {
+  display: none;
+}
+
+/* Javascript - Allgemein */
+
+#ueberuns .ueberUnsActive {
+  height: 549px;
+}
+
+#ueberuns .ueberUnsActive .teaser-boxes-item-image {
+  display: block;
+}
+
+#ueberuns .ueberUnsActive p {
+  display: block;
+}
+
+#ueberuns .ueberUnsActive ul {
+  display: block;
+  margin-top: 6px;
+}
+
+#ueberuns .ueberUnsActive h3 {
   margin: 0;
   color: white;
   position: absolute;
@@ -33,90 +83,102 @@
   border-right: solid 4px white; */
 }
 
-#ueberuns .kategorie1_text1 {
+/* Javascript - Kategorie 1 */
+
+#ueberuns .ueberUnsActive .kategorie1_text1 {
   position: absolute;
-  width: 280px;
-  top: 224px;
-  left: 113px;
-  font-size: 1.05em;
-  line-height: 1.35em;
+  font-size: 1.1em;
+  line-height: 1.43em;
+  width: 390px;
+  top: 233px;
+  left: 143px;
+  text-shadow: 5px 5px 35px 35px black;
 }
 
 #ueberuns .kategorie1_text2 {
   position: absolute;
-  width: 250px;
-  top: 250px;
-  right: 205px;
-  font-size: 1.05em;
+  width: 385px;
+  top: 285px;
+  right: 190px;
+  font-size: 1.1em;
+  line-height: 1.43em;
   text-align: right;
-  line-height: 1.35em;
 }
 
 #ueberuns .kategorie1 p {
   margin: 0;
   color: white;
   font-family: verdana;
+  text-shadow: 1.5px 1.5px black;
 }
 
-/* Kategorie 2 */
+/* Javascript - Kategorie 2 */
 
-#ueberuns .kategorie2 {
-  margin: 3px 0px;
-  height: 84px;
-  background-color: #2d2d2d;
+#ueberuns .kategorie2_text1 {
+  position: absolute;
+  font-size: 1.1em;
+  line-height: 1.43em;
+  width: 390px;
+  top: 130px;
+  left: 110px;
+  text-shadow: 5px 5px 35px 35px black;
 }
 
-#ueberuns .kategorie2 .teaser-boxes-item-image {
-  display: none;
-}
-
-#ueberuns .kategorie2 h3 {
-  margin: 0;
-  text-align: center;
-  color: white;
-  font-family: verdana;
-  font-size: 1.55em;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-  line-height: 84px;
+#ueberuns .kategorie2_text2 {
+  position: absolute;
+  width: 445px;
+  top: 215px;
+  right: 30px;
+  font-size: 1.1em;
+  line-height: 1.43em;
 }
 
 #ueberuns .kategorie2 p {
-  display: none;
-}
-
-#ueberuns .kategorie2 ul {
-  display: none;
-}
-
-/* Kategorie 3 */
-
-#ueberuns .kategorie3 {
-  height: 84px;
-  background-color: #2d2d2d;
-}
-
-#ueberuns .kategorie3 .teaser-boxes-item-image {
-  display: none;
-}
-
-#ueberuns .kategorie3 h3 {
   margin: 0;
-  text-align: center;
   color: white;
   font-family: verdana;
-  font-size: 1.55em;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-  line-height: 84px;
+  text-shadow: 1.5px 1.5px black;
+}
+
+#ueberuns .kategorie2 ul li {
+  color: white;
+  font-family: verdana;
+  text-shadow: 1.5px 1.5px black;
+  list-style-type: square;
+}
+
+/* Javascript - Kategorie 3 */
+
+#ueberuns .kategorie3_text1 {
+  position: absolute;
+  font-size: 1.1em;
+  line-height: 1.43em;
+  width: 390px;
+  top: 135px;
+  left: 40px;
+  text-shadow: 5px 5px 35px 35px black;
+}
+
+#ueberuns .kategorie3_text2 {
+  position: absolute;
+  width: 445px;
+  top: 185px;
+  right: 150px;
+  font-size: 1.1em;
+  line-height: 1.43em;
 }
 
 #ueberuns .kategorie3 p {
-  display: none;
+  margin: 0;
+  color: white;
+  font-family: verdana;
+  text-shadow: 1.5px 1.5px black;
+  text-decoration: underline;
 }
 
-#ueberuns .kategorie3 ul {
-  display: none;
+#ueberuns .kategorie3 ul li {
+  color: white;
+  font-family: verdana;
+  text-shadow: 1.5px 1.5px black;
+  list-style-type: square;
 }
