@@ -20,7 +20,7 @@
 #leistungen .leistungen-leftDiv {
   margin: 75px 950px 75px 60px;
   position: relative;
-  cursor: default;
+  cursor: pointer;
 }
 
 #leistungen .leistungen-leftDiv h2 {
