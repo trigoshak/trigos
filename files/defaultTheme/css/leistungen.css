@@ -18,7 +18,7 @@
 }
 
 #leistungen .leistungen-leftDiv {
-  margin: 75px 950px 75px 60px;
+  margin: 75px 800px 75px 3.9494vw;
   position: relative;
   cursor: pointer;
 }
@@ -36,6 +36,7 @@
   color: grey;
   letter-spacing: 0.01em;
   transition: ease-out 0.3s;
+  font-size: 1em;
 }
 
 #leistungen .leistungen-leftDiv .leistungen-leftDiv-textLine {
@@ -55,26 +56,18 @@
   right: 0;
   top: 0;
   width: 750px;
-  box-shadow: 0px 0px 15px #222222;
+  box-shadow: 0px 0px 25px #222222;
 }
 
 #leistungen .leistungen-rightDiv {
   display: none;
 }
 
-/* #leistungen .leistungen-rightDiv:nth-child(2) {
-  display: block;
-} */
-
 #leistungen .leistungen-rightDiv .teaser-boxes-item-image {
   position: absolute;
 }
 
 /* Javascript */
-
-#leistungen .leistungenActive {
-
-}
 
 #leistungen .leistungenActive h2 {
   color: white;
@@ -104,7 +97,8 @@
   45% { opacity: 0; }
   60% { opacity: 1; }
   75% { opacity: 1; }
-  100% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 #leistungen .leistungen-rightDiv .teaser-boxes-item-image:nth-child(2) {
@@ -128,14 +122,16 @@
   0% { opacity: 1; }
   15% { opacity: 1; }
   30% { opacity: 0; }
-  100% { opacity: 0; }
+  85% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-/* #leistungen .leistungenActive + .leistungen-rightDiv .leistungen-rightDiv-center .teaser-boxes-item-image:nth-child(1) {
-  animation: leistungenActiveAnim linear 5s;
-}
+/* Media Querys */
 
-@keyframes leistungenActiveAnim {
-  100% { opacity: 0; }
-  0% { opacity: 1; }
-} */
+@media(max-width: 1440px) {
+  /* #leistungen .leistungenActive .leistungen-leftDiv-textLine {
+    background-color: white;
+    margin-left: 460px;
+    width: 190px;
+  } */
+}

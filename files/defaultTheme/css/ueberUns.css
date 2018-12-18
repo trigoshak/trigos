@@ -22,7 +22,9 @@
 }
 
 #ueberuns .kategorie .teaser-boxes-item-image {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  transition: ease-out 0.3s;
 }
 
 #ueberuns .kategorie h3 {
@@ -35,6 +37,7 @@
   text-transform: uppercase;
   letter-spacing: 0.01em;
   line-height: 84px;
+  transition: ease-out 0.3s;
 }
 
 #ueberuns .kategorie p {
@@ -52,7 +55,7 @@
 }
 
 #ueberuns .ueberUnsActive .teaser-boxes-item-image {
-  display: block;
+  opacity: 1;
 }
 
 #ueberuns .ueberUnsActive p {
@@ -113,6 +116,11 @@
   text-shadow: 1.5px 1.5px black;
 }
 
+#ueberuns .kategorie1 h3 {
+  position: absolute;
+  right: Calc(50% - 58.775px);
+}
+
 /* Javascript - Kategorie 2 */
 
 #ueberuns .kategorie2_text1 {
@@ -146,6 +154,11 @@
   font-family: verdana;
   text-shadow: 1.5px 1.5px black;
   list-style-type: square;
+}
+
+#ueberuns .kategorie2 h3 {
+  position: absolute;
+  right: Calc(50% - 112.9065px);
 }
 
 /* Javascript - Kategorie 3 */
@@ -182,4 +195,13 @@
   font-family: verdana;
   text-shadow: 1.5px 1.5px black;
   list-style-type: square;
+}
+
+#ueberuns .kategorie3 h3 {
+  position: absolute;
+  right: Calc(50% - 36.919px);
+}
+
+#ueberuns .ueberUnsActive h3 {
+  right: 0;
 }

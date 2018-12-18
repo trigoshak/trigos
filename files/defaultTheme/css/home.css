@@ -1,10 +1,11 @@
 #home {
   background: url(../img/home_weltkarte.png) no-repeat;
-  background-size: 85%;
+  background-size: 1250px;
   background-position: center;
   background-color: #2d2d2d;
   height: 723.2px;
   position: relative;
+  transition: ease-out 0.3s;
 }
 
 #home .home-overlay2 h2 {
@@ -16,6 +17,7 @@
   font-size: 12em;
   font-family: prime;
   text-shadow: -120px -50px rgba(65, 65, 65, 0.6);
+  transition: ease-out 0.3s;
 }
 
 #home .home-overlay2 img {
@@ -23,6 +25,7 @@
   top: Calc(50% - 92px);
   left: Calc(50% + 152px);
   width: 100px;
+  transition: ease-out 0.3s;
 }
 
 #home .mouse-section {
@@ -63,4 +66,52 @@
   font-weight: 100;
   font-family: prime;
   margin: 10px 0px 0px 0px;
+}
+
+/* Media Querys */
+
+@media(max-width: 1080px) {
+  #home {
+    background-size: 1150px;
+  }
+}
+
+@media(max-width: 930px) {
+  #home {
+    background-size: 1000px;
+  }
+  #home .home-overlay2 h2 {
+    top: Calc(50% - 95.2px);
+    left: Calc(50% - 197.3px);
+    font-size: 10em;
+    text-shadow: -95px -40px rgba(65, 65, 65, 0.6);
+  }
+  #home .home-overlay2 img {
+    top: Calc(50% - 77px);
+    left: Calc(50% + 126px);
+    width: 85px;
+  }
+}
+
+@media(max-width: 780px) {
+  #home {
+    background-size: 850px;
+  }
+}
+
+@media(max-width: 630px) {
+  /* #home {
+    background-size: 700px;
+  } */
+  #home .home-overlay2 h2 {
+    top: Calc(50% - 75.6px);
+    left: Calc(50% - 158.3375px);
+    font-size: 8em;
+    text-shadow: -70px -30px rgba(65, 65, 65, 0.6);
+  }
+  #home .home-overlay2 img {
+    top: Calc(50% - 63px);
+    left: Calc(50% + 100px);
+    width: 70px;
+  }
 }
