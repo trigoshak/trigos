@@ -31,7 +31,7 @@
   margin: 0;
   text-align: center;
   color: white;
-  font-family: verdana;
+  font-family: arial;
   font-size: 1.55em;
   font-weight: 100;
   text-transform: uppercase;
@@ -73,11 +73,11 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  font-family: verdana;
+  font-family: arial;
   font-size: 1.55em;
   font-weight: 100;
   text-transform: uppercase;
-  letter-spacing: 0.19em;
+  /* letter-spacing: 0.19em; */
   background-color: #2d2d2d;
   line-height: 84px;
   padding: 0px 32px 0px 32px;
@@ -85,6 +85,8 @@
   border-bottom-right-radius: 9px;
   border-bottom: solid 4px white;
   border-right: solid 4px white; */
+  border-top-left-radius: 5px;
+  background-color: #2d2d2d;
 }
 
 /* Javascript - Kategorie 1 */
@@ -140,6 +142,10 @@
   right: 30px;
   font-size: 1.1em;
   line-height: 1.43em;
+}
+
+#ueberuns .kategorie2_text2 p {
+  text-decoration: underline;
 }
 
 #ueberuns .kategorie2 p {

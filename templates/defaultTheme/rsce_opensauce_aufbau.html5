@@ -9,7 +9,7 @@
 <div class="aufbau-rightside">
 	<h2>Unterrichtskonzept</h2>
 	<?php if ($this->text_ug): ?>
-		<p><?php echo $this->text_ug ?></p>
+		<?php echo $this->text_ug ?>
 	<?php endif ?>
 </div>
 

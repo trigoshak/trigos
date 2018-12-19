@@ -76,9 +76,6 @@
 
 #aufbau .aufbau-innersection > div {
   float: left;
-}
-
-#aufbau .aufbau-innersection > div {
   width: 25%;
   box-sizing: border-box;
   padding: 0 50px;
@@ -99,3 +96,143 @@
 .einkauf-muster, .verwaltung-muster, .verkauf-muster, .rechnungswesen-muster {
   display: none;
 }
+
+/* Animations - h2´s */
+
+#aufbau section > div > h2 {
+  opacity: 0;
+}
+
+#aufbau .aufbau-leftside .leftH2FadeIn {
+  opacity: 1;
+  transition: ease-out 0.6s 0.8s;
+}
+
+#aufbau .aufbau-rightside .rightH2FadeIn {
+  opacity: 1;
+  transition: ease-out 0.6s 1.9s;
+}
+
+/* Animations - p´s */
+
+#aufbau section > div > p  {
+  margin-top: 50px;
+  opacity: 0;
+}
+
+#aufbau section div .leftPFadeIn {
+  margin-top: 0;
+  opacity: 1;
+  transition: ease-out 0.8s 1.3s;
+}
+
+#aufbau section div .rightPFadeIn {
+  margin-top: 0;
+  opacity: 1;
+  transition: ease-out 0.8s 2.4s;
+}
+
+/* Animations - div´s */
+
+#aufbau .aufbau-innersection > div {
+  margin-top: 70px;
+  opacity: 0;
+}
+
+#aufbau .aufbau-innersection .einkaufFadeIn {
+  transition: ease-out 0.6s 3.3s;
+  opacity: 1;
+  margin-top: 0;
+}
+
+#aufbau .aufbau-innersection .verwaltungFadeIn {
+  transition: ease-out 0.6s 3.5s;
+  opacity: 1;
+  margin-top: 0;
+}
+
+#aufbau .aufbau-innersection .verkaufFadeIn {
+  transition: ease-out 0.6s 3.7s;
+  opacity: 1;
+  margin-top: 0;
+}
+
+#aufbau .aufbau-innersection .rechnungswesenFadeIn {
+  transition: ease-out 0.6s 3.9s;
+  opacity: 1;
+  margin-top: 0;
+}
+
+/* Media Querys */
+
+@media(max-width: 1280px) {
+  #aufbau .aufbau-innersection {
+    padding: 0 15px;
+  }
+  #aufbau .aufbau-innersection > div {
+    padding: 0 25px;
+  }
+  #aufbau .aufbau-leftside {
+    padding: 75px 50px;
+  }
+  #aufbau .aufbau-rightside {
+    padding: 75px 50px;
+  }
+}
+
+@media(max-width: 1000px) {
+  #aufbau .aufbau-innersection > div {
+    padding: 0;
+  }
+  #aufbau .aufbau-leftside {
+    padding: 50px 50px;
+  }
+  #aufbau .aufbau-rightside {
+    padding: 50px 50px;
+  }
+  #aufbau .aufbau-innersection .verwaltung-beschreibung, #aufbau .aufbau-innersection .verkauf-beschreibung {
+    border-radius: 0;
+  }
+  #aufbau .aufbau-innersection .einkauf-beschreibung {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #aufbau .aufbau-innersection .rechnungswesen-beschreibung {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  /* #aufbau .aufbau-innersection {
+    padding: 0 15px;
+    background-color: grey;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+  }
+  #aufbau .aufbau-innersection > div {
+    float: none;
+    padding: 0;
+    position: absolute;
+    height: 25%;
+  }
+  #aufbau .aufbau-innersection > div > div {
+    border: none;
+  }
+  #aufbau .aufbau-innersection > div > div h3 {
+    margin: 0;
+  }
+  #aufbau .aufbau-innersection > div > div p {
+    padding: 0;
+  } */
+}
+
+/* else {
+  $(".aufbau-leftside>h2").removeClass("leftH2FadeIn");
+  $(".aufbau-leftside>p").removeClass("leftPFadeIn");
+  $(".aufbau-rightside>h2").removeClass("rightH2FadeIn");
+  $(".aufbau-rightside>p").removeClass("rightPFadeIn");
+  $(".einkauf-section").removeClass("einkaufFadeIn");
+  $(".verwaltung-section").removeClass("verwaltungFadeIn");
+  $(".verkauf-section").removeClass("verkaufFadeIn");
+  $(".rechnungswesen-section").removeClass("rechnungswesenFadeIn");
+} */
