@@ -23,18 +23,23 @@
 	font-weight: lighter;
 	color: white;
   margin-top: 58.005px;
+  height: 56.8px;
 }
 
 .upper-div > p {
 	white-space: pre-wrap;
   font-size: inherit;
   font-weight: lighter;
-	margin: 3.3% 25% 2.1% 25%;
+	margin: 25px 25% 25px 25%;
 }
 
 .upper-div a p {
   color: #2d3c6b;
-  margin: 0px 610px 79px;
+  margin-bottom: 5.6082%;
+}
+
+.upper-div a p:hover {
+  color: #31447e;
 }
 
 .lower-div {
@@ -49,7 +54,7 @@
 div.kategorie-item {
     float: left;
     width: 25%;
-    padding: 0em 2.5em 2.25em 2.25em;
+    padding: 0 3%;
     height: auto;
     box-sizing: border-box;
     margin: 0;
@@ -68,4 +73,147 @@ div.kategorie-item h4 {
   color: #2d2d2d;
   font-size: 1.1em;
   text-transform: uppercase;
+}
+
+/* Media Querys */
+
+@media(max-width: 675px) {
+  .upper-div > p {
+  	margin: 25px 12% 25px 12%;
+  }
+  .kategorie-item h4 {
+      display: none;
+  }
+  .lower-div {
+    position: relative;
+  }
+  div.kategorie-item {
+    float: none;
+    position: absolute;
+    transform: scale(1.6);
+  }
+  div.kategorie-item:nth-child(1) {
+    top: 20%;
+    left: 15%;
+  }
+  div.kategorie-item:nth-child(2) {
+    top: 20%;
+    right: 15%;
+  }
+  div.kategorie-item:nth-child(3) {
+    top: 50%;
+    left: 15%;
+  }
+  div.kategorie-item:nth-child(4) {
+    top: 50%;
+    right: 15%;
+  }
+}
+
+
+@media(max-width: 570px) {
+  div.kategorie-item {
+    transform: scale(2);
+  }
+}
+
+@media(max-width: 460px) {
+  div.kategorie-item {
+    transform: scale(2.4);
+  }
+  div.kategorie-item:nth-child(1) {
+    top: 18%;
+    left: 15%;
+  }
+  div.kategorie-item:nth-child(2) {
+    top: 18%;
+    right: 15%;
+  }
+  div.kategorie-item:nth-child(3) {
+    top: 53%;
+    left: 15%;
+  }
+  div.kategorie-item:nth-child(4) {
+    top: 53%;
+    right: 15%;
+  }
+}
+
+/* Animations - div´s */
+
+#jobs .lower-div .kategorie-item .kategorie-item-image {
+  transform: scale(0);
+}
+
+#jobs .lower-div .kategorie-item .popUp1 {
+  /* transform: scale(1);
+  transition: ease-out 0.3s 0.8s; */
+  animation: animPopUp ease-out 0.5s 4.3s forwards;
+}
+
+#jobs .lower-div .kategorie-item .popUp2 {
+  /* transform: scale(1);
+  transition: ease-out 0.3s 1.0s; */
+  animation: animPopUp ease-out 0.5s 4.7s forwards;
+}
+
+#jobs .lower-div .kategorie-item .popUp3 {
+  /* transform: scale(1);
+  transition: ease-out 0.3s 1.2s; */
+  animation: animPopUp ease-out 0.5s 5.1s forwards;
+}
+
+#jobs .lower-div .kategorie-item .popUp4 {
+  /* transform: scale(1);
+  transition: ease-out 0.3s 1.4s; */
+  animation: animPopUp ease-out 0.5s 5.5s forwards;
+}
+
+@keyframes animPopUp {
+  0% { transform: scale(0); }
+  40% { transform: scale(1.2); }
+  70% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+/* Animations - Text */
+
+#jobs .upper-div p {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+#jobs .upper-div .jobsP {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: ease-out 0.65s 3.4s;
+}
+
+#jobs .lower-div h4 {
+  transform: scale(1) translateY(-30px);
+  opacity: 0;
+}
+
+#jobs .lower-div .jobs1H4 {
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+  transition: ease-out 0.6s 5.85s;
+}
+
+#jobs .lower-div .jobs2H4 {
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+  transition: ease-out 0.6s 6.1s;
+}
+
+#jobs .lower-div .jobs3H4 {
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+  transition: ease-out 0.6s 6.35s;
+}
+
+#jobs .lower-div .jobs4H4 {
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+  transition: ease-out 0.6s 6.6s;
 }

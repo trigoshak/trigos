@@ -1,8 +1,6 @@
 <section class="teaser-boxes <?php echo $this->class ?>"<?php echo $this->cssID ?>>
 	<div class="upper-div">
-		<?php if ($this->headline): ?>
-			<h3><?php echo $this->headline ?></h3>
-		<?php endif ?>
+		<h3><?php echo $this->headline ?></h3>
 
 		<?php if ($this->description): ?>
 			<?php echo $this->description ?>

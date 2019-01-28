@@ -1,6 +1,7 @@
 #aufbau {
   height: 723.2px;
   background-color: #2d2d2d;
+  position: relative;
 }
 
 #aufbau .text-tri, .text-os {
@@ -59,7 +60,7 @@
   font-family: prime;
   font-weight: 900;
   font-size: 1.4em;
-  margin: 20px 0 30px;
+  margin: 23px 0 27px;
   color: white;
   text-align: center;
 }
@@ -105,62 +106,62 @@
 
 #aufbau .aufbau-leftside .leftH2FadeIn {
   opacity: 1;
-  transition: ease-out 0.6s 0.8s;
+  transition: ease-out 0.5s 0.8s;
 }
 
 #aufbau .aufbau-rightside .rightH2FadeIn {
   opacity: 1;
-  transition: ease-out 0.6s 1.9s;
+  transition: ease-out 0.5s 1.9s;
 }
 
 /* Animations - p´s */
 
 #aufbau section > div > p  {
-  margin-top: 50px;
+  transform: translateY(50px);
   opacity: 0;
 }
 
 #aufbau section div .leftPFadeIn {
-  margin-top: 0;
+  transform: translateY(0px);
   opacity: 1;
-  transition: ease-out 0.8s 1.3s;
+  transition: ease-out 0.65s 1.3s;
 }
 
 #aufbau section div .rightPFadeIn {
-  margin-top: 0;
+  transform: translateY(0px);
   opacity: 1;
-  transition: ease-out 0.8s 2.4s;
+  transition: ease-out 0.65s 2.4s;
 }
 
 /* Animations - div´s */
 
 #aufbau .aufbau-innersection > div {
-  margin-top: 70px;
+  transform: translateY(70px);
   opacity: 0;
 }
 
 #aufbau .aufbau-innersection .einkaufFadeIn {
-  transition: ease-out 0.6s 3.3s;
+  transition: ease-out 0.5s 3.1s;
   opacity: 1;
-  margin-top: 0;
+  transform: translateY(0px);
 }
 
 #aufbau .aufbau-innersection .verwaltungFadeIn {
-  transition: ease-out 0.6s 3.5s;
+  transition: ease-out 0.5s 3.3s;
   opacity: 1;
-  margin-top: 0;
-}
-
-#aufbau .aufbau-innersection .verkaufFadeIn {
-  transition: ease-out 0.6s 3.7s;
-  opacity: 1;
-  margin-top: 0;
+  transform: translateY(0px);
 }
 
 #aufbau .aufbau-innersection .rechnungswesenFadeIn {
-  transition: ease-out 0.6s 3.9s;
+  transition: ease-out 0.5s 3.5s;
   opacity: 1;
-  margin-top: 0;
+  transform: translateY(0px);
+}
+
+#aufbau .aufbau-innersection .verkaufFadeIn {
+  transition: ease-out 0.5s 3.7s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /* Media Querys */
@@ -185,45 +186,95 @@
     padding: 0;
   }
   #aufbau .aufbau-leftside {
-    padding: 50px 50px;
+    padding: 60px 50px;
   }
   #aufbau .aufbau-rightside {
-    padding: 50px 50px;
+    padding: 60px 50px;
   }
-  #aufbau .aufbau-innersection .verwaltung-beschreibung, #aufbau .aufbau-innersection .verkauf-beschreibung {
+  #aufbau .aufbau-innersection .verwaltung-beschreibung, #aufbau .aufbau-innersection .rechnungswesen-beschreibung {
     border-radius: 0;
   }
   #aufbau .aufbau-innersection .einkauf-beschreibung {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  #aufbau .aufbau-innersection .rechnungswesen-beschreibung {
+  #aufbau .aufbau-innersection .verkauf-beschreibung {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  /* #aufbau .aufbau-innersection {
-    padding: 0 15px;
-    background-color: grey;
-    position: relative;
+}
+
+@media(max-width: 940px) {
+  #aufbau .aufbau-leftside {
+    padding: 10px 50px;
     height: 100%;
     width: 100%;
-    top: 0;
   }
-  #aufbau .aufbau-innersection > div {
+  #aufbau .aufbau-rightside {
+    padding: 10px 50px;
     float: none;
-    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  #aufbau .aufbau-rightside h2 {
+    margin-top: 0;
+  }
+  #aufbau .aufbau-rightside h2, #aufbau .aufbau-leftside h2 {
+    margin-bottom: 15px;
+  }
+  #aufbau .aufbau-innersection {
+    padding: 40px 15px 0;
+  }
+}
+
+@media(max-width: 840px) {
+  #aufbau .aufbau-innersection > div > div {
+    border-radius: 0;
+  }
+  #aufbau .aufbau-innersection {
+    padding: 40px 0 0;
     position: absolute;
-    height: 25%;
+    bottom: 0;
+    width: 100%;
+  }
+  #aufbau .aufbau-innersection h3 {
+    font-size: 1.2em;
+    margin: 24px 0 26px;
+  }
+  #aufbau .aufbau-leftside {
+    padding: 30px 50px;
+  }
+  #aufbau .aufbau-rightside {
+    padding: 30px 50px;
+  }
+}
+
+@media(max-width: 755px) {
+  #aufbau .aufbau-leftside {
+    padding: 20px 50px;
+  }
+  #aufbau .aufbau-rightside {
+    padding: 20px 50px;
+  }
+}
+
+@media(max-width: 705px) {
+  #aufbau .aufbau-leftside {
+    padding: 15px 30px;
+  }
+  #aufbau .aufbau-rightside {
+    padding: 15px 30px;
   }
   #aufbau .aufbau-innersection > div > div {
-    border: none;
+    border-left: none;
+    border-right: none;
   }
-  #aufbau .aufbau-innersection > div > div h3 {
-    margin: 0;
+}
+
+@media(max-width: 560px) {
+  #aufbau .aufbau-innersection {
+    display: none;
   }
-  #aufbau .aufbau-innersection > div > div p {
-    padding: 0;
-  } */
 }
 
 /* else {

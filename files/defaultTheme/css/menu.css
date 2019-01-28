@@ -13,9 +13,9 @@
 }
 
 .numbering {
-    color: #2d2d2d;
-    padding: 0px;
-    margin: 0px;
+  color: #383838;
+  padding: 0px;
+  margin: 0px;
 }
 
 #homepunkt {
@@ -34,7 +34,7 @@ p {
   display: block;
   background-color: RGB(0, 0, 0, 0.95);
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   right: 0;
   top: 55px;
   width: 29px;
@@ -54,7 +54,7 @@ p {
   width: 258.264px;
   height: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   right: -258.263px;
   transition: ease-out 0.3s;
 }
@@ -86,3 +86,20 @@ p {
 #wrapper #container #main .inside .mod_article.active + #menue {
   background-color: red;
 } */
+
+/* Media Querys */
+
+@media(max-width: 426px) {
+  #menue #homepunkt {
+    margin: 2em 7.5em 2em 3.5em;
+  }
+}
+
+@media(max-width: 769px) {
+  #menue #homepunkt {
+    margin: 2.5em 7.5em 2.5em 3.5em;
+  }
+  #menue #menu-folded_in {
+    background-color: RGB(0, 0, 0, 0.6);
+  }
+}

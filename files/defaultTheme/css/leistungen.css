@@ -18,7 +18,7 @@
 }
 
 #leistungen .leistungen-leftDiv {
-  margin: 75px 800px 75px 3.9494vw;
+  margin: 75px 0 75px 3.9494vw;
   position: relative;
   cursor: pointer;
 }
@@ -80,7 +80,7 @@
 
 #leistungen .leistungenActive .leistungen-leftDiv-textLine {
   background-color: white;
-  margin-left: 460px;
+  margin-left: 30vw;
   width: 190px;
 }
 
@@ -126,12 +126,150 @@
   100% { opacity: 1; }
 }
 
+#leistungen .leistungen-rightDiv {
+  background-color: #2d2d2d;
+  height: 100%;
+}
+
 /* Media Querys */
 
 @media(max-width: 1440px) {
-  /* #leistungen .leistungenActive .leistungen-leftDiv-textLine {
+  #leistungen .leistungen-leftDiv {
+    margin: 75px 0 75px 2vw;
+  }
+}
+
+@media(max-width: 1360px) {
+  #leistungen .leistungen-leftDiv {
+    margin: 75px 0 75px 0.2vw;
+  }
+}
+
+@media(max-width: 1300px) {
+  #leistungen .leistungen-rightDiv {
+    transform: scale(0.9);
+  }
+}
+
+@media(max-width: 1260px) {
+  #leistungen .leistungen-rightDiv {
+    transform: scale(0.8);
+  }
+}
+
+@media(max-width: 1210px) {
+  #leistungen .leistungen-rightDiv {
+    transform: scale(0.7) translateX(50px);
+  }
+}
+
+@media(max-width: 1140px) {
+  #leistungen .leistungen-rightDiv {
+    transform: scale(0.6) translateX(60px);
+  }
+}
+
+@media(max-width: 1100px) {
+  #leistungen .leistungen-rightDiv .leistungen-rightDiv-center {
+    height: 72.185%;
+    overflow: hidden;
+    position: relative;
+  }
+  #leistungen .leistungen-rightDiv .leistungen-rightDiv-center .teaser-boxes-item-image {
+    position: absolute;
+
+  }
+  #leistungen .leistungen-rightDiv {
+    transform: scale(1) translateX(0);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+  }
+  #leistungen .leistungen-leftDiv {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    margin: 0;
+    transform: scale(1);
+  }
+  #leistungen .leistungen-leftDiv .leistungen-leftDiv-textLine {
+    width: 60px;
+    top: 30px;
+    transition: ease-out 0.2s;
+    left: Calc(50% - 30px);
+  }
+  #leistungen .leistungen-leftDiv p {
+    display: none;
+  }
+  #leistungen .leistungen-leftDiv h2 {
+    font-size: 1.2em;
+  }
+  #leistungen .leistungenActive .leistungen-leftDiv-textLine {
     background-color: white;
-    margin-left: 460px;
-    width: 190px;
+    margin-left: 0px;
+    width: 100px;
+    left: Calc(50% - 50px);
+  }
+  #leistungen .leistungen-leftDiv:nth-child(1) {
+    left: Calc(50% - 117.3875px);
+    bottom: 22%;
+  }
+  #leistungen .leistungen-leftDiv:nth-child(3) {
+    left: Calc(50% - 80.525px);
+    bottom: 16%;
+  }
+  #leistungen .leistungen-leftDiv:nth-child(5) {
+    left: Calc(50% - 171.219px);
+    bottom: 10%;
+  }
+  #leistungen .leistungen-leftDiv:nth-child(7) {
+    left: Calc(50% - 89.8185px);
+    bottom: 4%;
+  }
+  /* #leistungen .leistungenActive:nth-child(4n+1) {
+    left: 3%;
+    transition: ease-out 0.3s;
+  }
+  #leistungen .leistungenActive:nth-child(4n+3) {
+    left: 3%;
+    transition: ease-out 0.3s;
   } */
+}
+
+@media(max-width: 1100px) {
+  #leistungen .leistungen-rightDiv .leistungen-rightDiv-center .teaser-boxes-item-image {
+    top: -115px;
+  }
+}
+
+@media(max-width: 1000px) {
+  #leistungen .leistungen-rightDiv .leistungen-rightDiv-center .teaser-boxes-item-image {
+    top: -65px;
+  }
+}
+
+@media(max-width: 660px) {
+  #leistungen .leistungen-rightDiv .leistungen-rightDiv-center .teaser-boxes-item-image {
+    top: -25px;
+  }
+}
+
+@media(max-width: 580px) {
+  #leistungen .leistungen-rightDiv .leistungen-rightDiv-center .teaser-boxes-item-image {
+    top: 0px;
+  }
+}
+
+@media(max-width: 550px) {
+  #leistungen .leistungen-rightDiv .leistungen-rightDiv-center .teaser-boxes-item-image {
+    height: 100%;
+    width: 542.4px;
+    left: Calc(50% - 271.2px);
+  }
+}
+
+@media(max-width: 450px) {
+  #leistungen .leistungen-rightDiv .leistungen-rightDiv-center .teaser-boxes-item-image {
+    left: Calc(50% - 290.5px);
+  }
 }
